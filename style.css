@@ -1,0 +1,23 @@
+html {max-width:980px;margin:0 auto;}
+body {margin:0;background-image:url('images/bak.gif');font-family:Courier;}
+a {color:#167E1B;text-decoration:none;}
+a:hover {color:#178F2C;text-decoration:underline;}
+
+hr {background:transparent url('images/line.png') no-repeat;background-size:640px 5px;margin:0;border:0;height:5px;box-sizing:content-box;}
+h1,h2 {font-size:x-large;margin:1.8em 0;}
+h3 {font-size:large;margin:2.5em 0 0;color:#167E1B;text-transform:uppercase;}
+h1 {margin-top:1em;}
+h4 {font-size:medium;font-weight:bold;margin:1em 0 0;}
+p {text-indent:2.5em;}
+ul {list-style:none;padding:0;margin:0 0 1em;}
+
+h1:before {content:'===-=-=----- ';font-size:16px;}
+h1:after {content:' -----=-=-===';font-size:16px;}
+h2:before {content:':=-==';}
+h2:after {content:'==-=:';}
+h3:before {content:':---===';}
+h3:after {content:':';}
+
+.header {text-align:center;}
+.header ul {list-style:none;padding:0;margin:0 0 1.8em;}
+.header hr {background-position:center;}

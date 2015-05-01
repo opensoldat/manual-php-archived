@@ -2,24 +2,81 @@
 
 require 'config.php';
 
-main();
+main(isset($argv) ? $argv : array());
 
-function main()
+function main($args)
 {
-	$links = array(
-		'register' => 'http://soldat.pl/en/page/register'
-	);
+	if (count($args) >= 2 && $args[1] === 'compile')
+	{
+		compile();
+		return;
+	}
 
 	config::$locale = get_locale();
 	load_strings(config::$locale);
 
-	echo render('manual', array('links' => $links));
+	echo render('manual', array(
+		'register_link' => 'http://soldat.pl/en/page/register',
+		'style_prefix' => ''
+	));
 }
 
 function compile()
 {
+	$outdir = config::$compile_dir;
+
+	print('Cleaning up...' . PHP_EOL);
+
+	if (!del(rtrim($outdir, '/')))
+		trigger_error('Failed to remove directory ' . $outdir, E_USER_ERROR);
+
+	print('Copying files...' . PHP_EOL);
+
+	mkdir($outdir);
+	mkdir($outdir . 'images/');
+
+	$copy_src = glob('images/*.*');
+	$copy_src[] = 'style.css';
+	$copy_dst = array_map(function($name) use($outdir) { return $outdir . $name; }, $copy_src);
+
+	array_map("copy", $copy_src, $copy_dst);
+
 	config::$images_prefix = '../images/';
 	config::$images_prefix_localized = 'images/';
+
+	$languages = array_map(function($name) { return basename($name, '.php'); }, glob('i18n/*.php'));
+
+	$context = array(
+		'register_link' => 'http://soldat.pl/en/page/register',
+		'style_prefix' => '../'
+	);
+
+	foreach ($languages as $locale)
+	{
+		print('Compiling ' . $locale . '...' . PHP_EOL);
+
+		mkdir($outdir . $locale);
+
+		config::$locale = $locale;
+		load_strings($locale);
+
+		$images = glob('images/' . $locale . '/*.*');
+
+		if (count($images) > 0)
+		{
+			mkdir($outdir . $locale . '/images');
+
+			$dst = array_map(function($name) use($outdir, $locale) {
+				return $outdir . $locale . '/images/' . basename($name);
+			}, $images);
+
+			array_map("copy", $images, $dst);
+		}
+
+		file_put_contents($outdir . $locale . '/manual.html', render('manual', $context));
+	}
+
+	print('Done!' . PHP_EOL);
 }
 
 function get_locale()
@@ -128,4 +185,29 @@ function _t($id)
 	}
 
 	return $result;
+}
+
+function del($name)
+{
+	if (!file_exists($name))
+		return true;
+
+	if (!is_dir($name) || is_link($name))
+		return unlink($name);
+
+	foreach (scandir($name) as $item)
+	{
+		if ($item == '.' || $item == '..')
+			continue;
+
+		if (!del($name . '/' . $item))
+		{
+			chmod($name . '/' . $item, 0777);
+
+			if (!del($name . '/' . $item))
+				return false;
+		}
+	}
+
+	return rmdir($name);
 }

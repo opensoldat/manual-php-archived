@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title><?= _t('manual_title'); ?></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>style.css">
 </head>
 <body>
 	<div class="header">
@@ -31,7 +31,7 @@
 			<li><a href="#credits"><?= _t('credits_title'); ?></a></li>
 			<li><a href="#contact"><?= _t('contact_title'); ?></a></li>
 		</ul>
-		<?= _t('index_reg_info', '<a href="' . $links['register'] . '">%</a>') . PHP_EOL; ?>
+		<?= _t('index_reg_info', '<a href="' . $register_link . '">%</a>') . PHP_EOL; ?>
 		<hr>
 	</div>
 	<h3 id="intro"><?= _t('intro_title'); ?></h3>

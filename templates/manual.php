@@ -56,6 +56,25 @@
 	<p><?= _t('story_body'); ?></p>
 	<hr>
 	<h3 id="start"><?= _t('start_title'); ?></h3>
+	<h4><?= _t('start_sp_title'); ?></h4>
+	<?= _t('start_sp_body_0') . PHP_EOL; ?>
+	<ul>
+		<li><?= _t('start_sp_body_1', '<em>%</em>'); ?></li>
+		<li><?= _t('start_sp_body_2', '<em>%</em>'); ?></li>
+		<li><?= _t('start_sp_body_3', '<em>%</em>'); ?></li>
+	</ul>
+	<h4><?= _t('start_mp_title'); ?></h4>
+	<?= _t('start_mp_body') . PHP_EOL; ?>
+	<ol class="start">
+		<li>
+			<?= _t('start_mp_body_a') . PHP_EOL; ?>
+			<p><?= _t('start_mp_body_a_desc', '<em>%</em>'); ?></p>
+		</li>
+		<li>
+			<?= _t('start_mp_body_b') . PHP_EOL; ?>
+			<p><?= _t('start_mp_body_b_desc', '<em>%</em>'); ?></p>
+		</li>
+	</ol>
 	<hr>
 	<h3 id="controls"><?= _t('controls_title'); ?></h3>
 	<hr>

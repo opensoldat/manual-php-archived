@@ -3,7 +3,7 @@ body {margin:0;background-image:url('images/bak.gif');font-family:Courier;}
 a {color:#167E1B;text-decoration:none;}
 a:hover {color:#178F2C;text-decoration:underline;}
 hr {background:transparent url('images/line.png') no-repeat;background-size:640px 5px;
-	margin:1em 0;border:0;height:5px;box-sizing:content-box;}
+	margin:1em 0;border:0;height:5px;box-sizing:content-box;clear:both;}
 h1,h2 {font-size:x-large;margin:1.8em 0;}
 h1 {margin-top:1em;}
 h3 {font-size:large;margin:2.5em 0 0;color:#167E1B;text-transform:uppercase;font-style:italic;}
@@ -31,6 +31,11 @@ h3:after {content:':';}
 .start {margin:1em 0;}
 .flat li {margin:0;}
 .flat li:before {content:'';}
+.modes {counter-reset:modes-counter;}
+.modes img {float:left;margin-right:1em;margin-bottom:0.5em;}
+.modes li {clear:both;counter-increment:modes-counter;margin-top:2em;min-height:75px;}
+.modes li:first-child {margin-top:1em;}
+.modes h4:before {content:counter(modes-counter) '. ';}
 
 .ctrl_wasd  {background-color:rgb(149,232,151);}
 .ctrl_mouse {background-color:rgb(255,255,255);}

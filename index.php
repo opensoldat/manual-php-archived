@@ -127,7 +127,7 @@ function text($id)
 	$result = '';
 
 	if (isset($strings[$id]))
-		$result = nl2br(htmlspecialchars($strings[$id]));
+		$result = str_replace("\n", '<br>', htmlspecialchars($strings[$id]));
 	else
 		return htmlspecialchars("---MISSING STRING '$id'---");
 
@@ -169,6 +169,15 @@ function text($id)
 					$splitted[] = str_replace('%', $value, $args[$index]);
 				else
 					$splitted[] = $args[$index];
+			}
+			else if ($value !== null)
+			{
+				$caller = array_shift(debug_backtrace());
+
+				trigger_error('Missing replacement argument for string ' . $id . ' in ' .
+					$caller['file'] . ' on line ' . $caller['line'], E_USER_WARNING);
+
+				$splitted[] = '{' . $text . '}';
 			}
 
 			// append raw string after replacement

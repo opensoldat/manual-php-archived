@@ -117,6 +117,52 @@
 	</ul>
 	<hr>
 	<h3 id="modes"><?= text('modes_title'); ?></h3>
+	<ul class="flat modes">
+		<li>
+			<?= img('deathmatch.jpg') . PHP_EOL; ?>
+			<h4><?= text('modes_dm'); ?></h4>
+			<p>
+				<?= text('modes_dm_desc'); ?><br>
+				<?= text('modes_respawn', '<em>%</em>', text('modes_respawn_dm')) . PHP_EOL; ?>
+			</p>
+		</li>
+		<li>
+			<?= img('pointmatch.jpg') . PHP_EOL; ?>
+			<h4><?= text('modes_pm'); ?></h4>
+			<p>
+				<?= text('modes_pm_desc', '<em>%</em>'); ?><br>
+				<?= text('modes_respawn', '<em>%</em>', text('modes_respawn_pm')) . PHP_EOL; ?>
+			</p>
+		</li>
+		<li>
+			<?= img('rambomatch.jpg') . PHP_EOL; ?>
+			<h4><?= text('modes_rm'); ?></h4>
+			<p>
+				<?= text('modes_rm_desc'); ?><br>
+				<?= text('modes_respawn', '<em>%</em>', text('modes_respawn_rm')) . PHP_EOL; ?>
+			</p>
+		</li>
+		<li>
+			<?= img('teammatch.jpg') . PHP_EOL; ?>
+			<h4><?= text('modes_tm'); ?></h4>
+			<p><?= text('modes_tm_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('ctf.jpg') . PHP_EOL; ?>
+			<h4><?= text('modes_ctf'); ?></h4>
+			<p><?= text('modes_ctf_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('infiltration.jpg') . PHP_EOL; ?>
+			<h4><?= text('modes_inf'); ?></h4>
+			<p><?= text('modes_inf_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('htf.jpg') . PHP_EOL; ?>
+			<h4><?= text('modes_htf'); ?></h4>
+			<p><?= text('modes_htf_desc'); ?></p>
+		</li>
+	</ol>
 	<hr>
 	<h3 id="options"><?= text('options_title'); ?></h3>
 	<hr>

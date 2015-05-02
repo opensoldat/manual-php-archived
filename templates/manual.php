@@ -2,107 +2,145 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<title><?= _t('manual_title'); ?></title>
+	<title><?= text('manual_title'); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>style.css">
 </head>
 <body>
 	<div class="header">
-		<h1><?= _t('header_title'); ?></h1>
-		<?= _img('title.gif') . PHP_EOL; ?>
-		<h2><?= _t('header_subtitle'); ?></h2>
-		<?= _t('index_title') . PHP_EOL; ?>
+		<h1><?= text('header_title'); ?></h1>
+		<?= img('title.gif') . PHP_EOL; ?>
+		<h2><?= text('header_subtitle'); ?></h2>
+		<?= text('index_title') . PHP_EOL; ?>
 		<ul>
-			<li><a href="#intro"><?= _t('intro_title'); ?></a></li>
-			<li><a href="#req"><?= _t('req_title'); ?></a></li>
-			<li><a href="#story"><?= _t('story_title'); ?></a></li>
-			<li><a href="#start"><?= _t('start_title'); ?></a></li>
-			<li><a href="#controls"><?= _t('controls_title'); ?></a></li>
-			<li><a href="#modes"><?= _t('modes_title'); ?></a></li>
-			<li><a href="#options"><?= _t('options_title'); ?></a></li>
-			<li><a href="#screen"><?= _t('screen_title'); ?></a></li>
-			<li><a href="#weapons"><?= _t('weapons_title'); ?></a></li>
-			<li><a href="#bonuses"><?= _t('bonuses_title'); ?></a></li>
-			<li><a href="#commands"><?= _t('commands_title'); ?></a></li>
-			<li><a href="#chat"><?= _t('chat_title'); ?></a></li>
-			<li><a href="#server"><?= _t('server_title'); ?></a></li>
-			<li><a href="#anticheat"><?= _t('anticheat_title'); ?></a></li>
-			<li><a href="#version"><?= _t('version_title'); ?></a></li>
-			<li><a href="#license"><?= _t('license_title'); ?></a></li>
-			<li><a href="#credits"><?= _t('credits_title'); ?></a></li>
-			<li><a href="#contact"><?= _t('contact_title'); ?></a></li>
+			<li><a href="#intro"><?=     text('intro_title');     ?></a></li>
+			<li><a href="#req"><?=       text('req_title');       ?></a></li>
+			<li><a href="#story"><?=     text('story_title');     ?></a></li>
+			<li><a href="#start"><?=     text('start_title');     ?></a></li>
+			<li><a href="#controls"><?=  text('controls_title');  ?></a></li>
+			<li><a href="#modes"><?=     text('modes_title');     ?></a></li>
+			<li><a href="#options"><?=   text('options_title');   ?></a></li>
+			<li><a href="#screen"><?=    text('screen_title');    ?></a></li>
+			<li><a href="#weapons"><?=   text('weapons_title');   ?></a></li>
+			<li><a href="#bonuses"><?=   text('bonuses_title');   ?></a></li>
+			<li><a href="#commands"><?=  text('commands_title');  ?></a></li>
+			<li><a href="#chat"><?=      text('chat_title');      ?></a></li>
+			<li><a href="#server"><?=    text('server_title');    ?></a></li>
+			<li><a href="#anticheat"><?= text('anticheat_title'); ?></a></li>
+			<li><a href="#version"><?=   text('version_title');   ?></a></li>
+			<li><a href="#license"><?=   text('license_title');   ?></a></li>
+			<li><a href="#credits"><?=   text('credits_title');   ?></a></li>
+			<li><a href="#contact"><?=   text('contact_title');   ?></a></li>
 		</ul>
-		<?= _t('index_reg_info', '<a href="' . $register_link . '">%</a>') . PHP_EOL; ?>
+		<?= text('index_reg_info', '<a href="' . $register_link . '">%</a>') . PHP_EOL; ?>
 		<hr>
 	</div>
-	<h3 id="intro"><?= _t('intro_title'); ?></h3>
-	<p><?= _t('intro_body'); ?></p>
+	<h3 id="intro"><?= text('intro_title'); ?></h3>
+	<p class="indent"><?= text('intro_body'); ?></p>
 	<hr>
-	<h3 id="req"><?= _t('req_title'); ?></h3>
-	<h4><?= _t('req_min_title'); ?></h4>
+	<h3 id="req"><?= text('req_title'); ?></h3>
+	<h4><?= text('req_min_title'); ?></h4>
 	<ul>
-		<li><?= _t('req_min_0'); ?></li>
-		<li><?= _t('req_min_1'); ?></li>
-		<li><?= _t('req_min_2'); ?></li>
-		<li><?= _t('req_min_3'); ?></li>
-		<li><?= _t('req_min_4'); ?></li>
-		<li><?= _t('req_min_5'); ?></li>
-		<li><?= _t('req_min_6'); ?></li>
-		<li><?= _t('req_min_7'); ?></li>
-		<li><?= _t('req_min_8'); ?></li>
-		<li><?= _t('req_min_9'); ?></li>
+		<li><?= text('req_min_0'); ?></li>
+		<li><?= text('req_min_1'); ?></li>
+		<li><?= text('req_min_2'); ?></li>
+		<li><?= text('req_min_3'); ?></li>
+		<li><?= text('req_min_4'); ?></li>
+		<li><?= text('req_min_5'); ?></li>
+		<li><?= text('req_min_6'); ?></li>
+		<li><?= text('req_min_7'); ?></li>
+		<li><?= text('req_min_8'); ?></li>
+		<li><?= text('req_min_9'); ?></li>
 	</ul>
 	<hr>
-	<h3 id="story"><?= _t('story_title'); ?></h3>
-	<p><?= _t('story_body'); ?></p>
+	<h3 id="story"><?= text('story_title'); ?></h3>
+	<p class="indent"><?= text('story_body'); ?></p>
 	<hr>
-	<h3 id="start"><?= _t('start_title'); ?></h3>
-	<h4><?= _t('start_sp_title'); ?></h4>
-	<?= _t('start_sp_body_0') . PHP_EOL; ?>
+	<h3 id="start"><?= text('start_title'); ?></h3>
+	<h4><?= text('start_sp_title'); ?></h4>
+	<?= text('start_sp_body_0') . PHP_EOL; ?>
 	<ul>
-		<li><?= _t('start_sp_body_1', '<em>%</em>'); ?></li>
-		<li><?= _t('start_sp_body_2', '<em>%</em>'); ?></li>
-		<li><?= _t('start_sp_body_3', '<em>%</em>'); ?></li>
+		<li><?= text('start_sp_body_1', '<em>%</em>'); ?></li>
+		<li><?= text('start_sp_body_2', '<em>%</em>'); ?></li>
+		<li><?= text('start_sp_body_3', '<em>%</em>'); ?></li>
 	</ul>
-	<h4><?= _t('start_mp_title'); ?></h4>
-	<?= _t('start_mp_body') . PHP_EOL; ?>
+	<h4><?= text('start_mp_title'); ?></h4>
+	<?= text('start_mp_body') . PHP_EOL; ?>
 	<ol class="start">
 		<li>
-			<?= _t('start_mp_body_a') . PHP_EOL; ?>
-			<p><?= _t('start_mp_body_a_desc', '<em>%</em>'); ?></p>
+			<?= text('start_mp_body_a') . PHP_EOL; ?>
+			<p><?= text('start_mp_body_a_desc', '<em>%</em>'); ?></p>
 		</li>
 		<li>
-			<?= _t('start_mp_body_b') . PHP_EOL; ?>
-			<p><?= _t('start_mp_body_b_desc', '<em>%</em>'); ?></p>
+			<?= text('start_mp_body_b') . PHP_EOL; ?>
+			<p><?= text('start_mp_body_b_desc', '<em>%</em>'); ?></p>
 		</li>
 	</ol>
 	<hr>
-	<h3 id="controls"><?= _t('controls_title'); ?></h3>
+	<h3 id="controls"><?= text('controls_title'); ?></h3>
+	<p><?= img('keys.png'); ?></p>
+	<ul class="flat">
+		<li><?= text('controls_left',        '<span class="ctrl_wasd">%</span>');  ?></li>
+		<li><?= text('controls_right',       '<span class="ctrl_wasd">%</span>');  ?></li>
+		<li><?= text('controls_jump',        '<span class="ctrl_wasd">%</span>');  ?></li>
+		<li><?= text('controls_crouch',      '<span class="ctrl_wasd">%</span>');  ?></li>
+		<li><?= text('controls_fire',        '<span class="ctrl_mouse">%</span>'); ?></li>
+		<li><?= text('controls_fly',         '<span class="ctrl_mouse">%</span>'); ?></li>
+		<li><?= text('controls_grenade',     '<span class="ctrl_e">%</span>');     ?></li>
+		<li><?= text('controls_throw',       '<span class="ctrl_f">%</span>');     ?></li>
+		<li><?= text('controls_prone',       '<span class="ctrl_x">%</span>');     ?></li>
+		<li><?= text('controls_weapon',      '<span class="ctrl_q">%</span>');     ?></li>
+		<li><?= text('controls_reload',      '<span class="ctrl_r">%</span>');     ?></li>
+		<li><?= text('controls_chat',        '<span class="ctrl_t">%</span>');     ?></li>
+		<li><?= text('controls_weapon_menu', '<span class="ctrl_tab">%</span>');   ?></li>
+	</ul>
+	<p><?= text('controls_note', '<em>%</em>'); ?></p>
+	<?= text('controls_tricks') . PHP_EOL; ?>
+	<ul class="flat">
+		<li><?= text('controls_tricks_0'); ?></li>
+		<li><?= text('controls_tricks_1'); ?></li>
+	</ul>
+	<br>
+	<ul class="flat">
+		<li><?= text('controls_cmd', '<span class="ctrl_cmd">%</span>');   ?></li>
+		<li><?= text('controls_f1',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f2',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f3',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f4',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f5',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f6',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f7',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f8',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f9',  '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_f10', '<span class="ctrl_fkeys">%</span>'); ?></li>
+		<li><?= text('controls_alt', '<span class="ctrl_alt">%</span>');   ?></li>
+		<li><?= text('controls_esc', '<span class="ctrl_esc">%</span>');   ?></li>
+	</ul>
 	<hr>
-	<h3 id="modes"><?= _t('modes_title'); ?></h3>
+	<h3 id="modes"><?= text('modes_title'); ?></h3>
 	<hr>
-	<h3 id="options"><?= _t('options_title'); ?></h3>
+	<h3 id="options"><?= text('options_title'); ?></h3>
 	<hr>
-	<h3 id="screen"><?= _t('screen_title'); ?></h3>
+	<h3 id="screen"><?= text('screen_title'); ?></h3>
 	<hr>
-	<h3 id="weapons"><?= _t('weapons_title'); ?></h3>
+	<h3 id="weapons"><?= text('weapons_title'); ?></h3>
 	<hr>
-	<h3 id="bonuses"><?= _t('bonuses_title'); ?></h3>
+	<h3 id="bonuses"><?= text('bonuses_title'); ?></h3>
 	<hr>
-	<h3 id="commands"><?= _t('commands_title'); ?></h3>
+	<h3 id="commands"><?= text('commands_title'); ?></h3>
 	<hr>
-	<h3 id="chat"><?= _t('chat_title'); ?></h3>
+	<h3 id="chat"><?= text('chat_title'); ?></h3>
 	<hr>
-	<h3 id="server"><?= _t('server_title'); ?></h3>
+	<h3 id="server"><?= text('server_title'); ?></h3>
 	<hr>
-	<h3 id="anticheat"><?= _t('anticheat_title'); ?></h3>
+	<h3 id="anticheat"><?= text('anticheat_title'); ?></h3>
 	<hr>
-	<h3 id="version"><?= _t('version_title'); ?></h3>
+	<h3 id="version"><?= text('version_title'); ?></h3>
 	<hr>
-	<h3 id="license"><?= _t('license_title'); ?></h3>
+	<h3 id="license"><?= text('license_title'); ?></h3>
 	<hr>
-	<h3 id="credits"><?= _t('credits_title'); ?></h3>
+	<h3 id="credits"><?= text('credits_title'); ?></h3>
 	<hr>
-	<h3 id="contact"><?= _t('contact_title'); ?></h3>
+	<h3 id="contact"><?= text('contact_title'); ?></h3>
 	<hr>
 </body>
 </html>

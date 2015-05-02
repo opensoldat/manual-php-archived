@@ -112,7 +112,7 @@ function render($file, $context = array())
 	return $result;
 }
 
-function _img($path)
+function img($path)
 {
 	if (file_exists('images/' . config::$locale . '/' . $path))
 		return '<img src="' . config::$images_prefix_localized . $path . '">';
@@ -120,7 +120,7 @@ function _img($path)
 	return '<img src="' . config::$images_prefix . $path . '">';
 }
 
-function _t($id)
+function text($id)
 {
 	global $strings;
 

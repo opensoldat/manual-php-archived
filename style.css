@@ -8,14 +8,13 @@ h1,h2 {font-size:x-large;margin:1.8em 0;}
 h1 {margin-top:1em;}
 h3 {font-size:large;margin:2.5em 0 0;color:#167E1B;text-transform:uppercase;font-style:italic;}
 h4 {font-size:medium;font-weight:bold;margin:1em 0 1em;}
-p {text-indent:2.5em;}
+p.indent {text-indent:2.5em;}
 ul,ol {list-style:none;padding:0;margin:0;}
 ul li {position:relative;margin-left:1.2em;}
 ul li:before {content:'-';position:absolute;left:-1.2em;}
 ol {counter-reset:counter;}
 ol li {position:relative;margin-left:1.5em;counter-increment:counter;}
 ol li:before {content:counter(counter, lower-alpha) ')';position:absolute;left:-1.5em;}
-li p {text-indent:0;}
 
 h1:before {content:'===-=-=----- ';font-size:16px;}
 h1:after {content:' -----=-=-===';font-size:16px;}
@@ -30,3 +29,19 @@ h3:after {content:':';}
 .header li:before {content:'';}
 .header hr {background-position:center;margin:0;}
 .start {margin:1em 0;}
+.flat li {margin:0;}
+.flat li:before {content:'';}
+
+.ctrl_wasd  {background-color:rgb(149,232,151);}
+.ctrl_mouse {background-color:rgb(255,255,255);}
+.ctrl_e     {background-color:rgb(175,116,107);}
+.ctrl_f     {background-color:rgb(219,208,72);}
+.ctrl_x     {background-color:rgb(0,102,153);}
+.ctrl_q     {background-color:rgb(94,107,206);}
+.ctrl_r     {background-color:rgb(215,134,74);}
+.ctrl_t     {background-color:rgb(101,169,135);}
+.ctrl_tab   {background-color:rgb(255,255,0);}
+.ctrl_cmd   {background-color:rgb(89,151,162);}
+.ctrl_fkeys {background-color:rgb(177,101,134);}
+.ctrl_alt   {background-color:rgb(171,201,198);}
+.ctrl_esc   {background-color:rgb(163,92,95);}

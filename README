@@ -1,0 +1,7 @@
+To compile (output in _compiled/):
+
+> php index.php compile
+
+Preview:
+
+http://urraka.github.io/soldat-manual/en_US/manual.html

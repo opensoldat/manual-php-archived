@@ -137,6 +137,8 @@ function text($id)
 		$nargs = count($args);
 		$splitted = array(substr($result, 0, $matches[0][0][1]));
 
+		$missing = array();
+
 		for ($i = 0; $i < $n; $i++)
 		{
 			$text = substr($matches[0][$i][0], 1, -1);
@@ -170,14 +172,12 @@ function text($id)
 				else
 					$splitted[] = $args[$index];
 			}
-			else if ($value !== null)
+			else
 			{
-				$caller = array_shift(debug_backtrace());
+				$missing[$index] = true;
 
-				trigger_error('Missing replacement argument for string ' . $id . ' in ' .
-					$caller['file'] . ' on line ' . $caller['line'], E_USER_WARNING);
-
-				$splitted[] = '{' . $text . '}';
+				if ($value !== null)
+					$splitted[] = '{' . $text . '}';
 			}
 
 			// append raw string after replacement
@@ -191,6 +191,15 @@ function text($id)
 		}
 
 		$result = implode($splitted);
+
+		if (count($missing) > 0)
+		{
+			$caller = array_shift(debug_backtrace());
+			$missing = count($missing);
+
+			trigger_error('Missing ' . $missing . ' replacement argument(s) for string ' . $id . ' in ' .
+				$caller['file'] . ' on line ' . $caller['line'], E_USER_WARNING);
+		}
 	}
 
 	return $result;

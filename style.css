@@ -36,6 +36,8 @@ h3:after {content:':';}
 .modes li {clear:both;counter-increment:modes-counter;margin-top:2em;min-height:75px;}
 .modes li:first-child {margin-top:1em;}
 .modes h4:before {content:counter(modes-counter) '. ';}
+.options li {margin-top:1em;}
+.options ul ul > li strong {font-style:italic;}
 
 .ctrl_wasd  {background-color:rgb(149,232,151);}
 .ctrl_mouse {background-color:rgb(255,255,255);}

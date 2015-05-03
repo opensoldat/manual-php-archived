@@ -165,6 +165,142 @@
 	</ul>
 	<hr>
 	<h3 id="options"><?= text('options_title'); ?></h3>
+	<h4><?= text('options_opt', '<em>%</em>'); ?></h4>
+	<p><?= img('options.png') . PHP_EOL; ?></p>
+	<ul class="options">
+		<li>
+			<strong><?= text('options_opt_game'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_opt_game_respawn'); ?></strong>
+					<ul class="flat">
+						<li>
+							<strong><?= text('options_opt_game_respawn_normal'); ?></strong>
+							<?= text('options_opt_game_respawn_normal_desc', '<em>%</em>') . PHP_EOL; ?>
+						</li>
+						<li>
+							<strong><?= text('options_opt_game_respawn_max'); ?></strong>
+							<?= text('options_opt_game_respawn_max_desc', '<em>%</em>') . PHP_EOL; ?>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<strong><?= text('options_opt_game_bonuses'); ?></strong>
+					<?= text('options_opt_game_bonuses_desc') . PHP_EOL; ?>
+					<ul class="flat">
+						<li>
+							<strong><?= text('options_opt_game_bonuses_freq'); ?></strong>
+							<?= text('options_opt_game_bonuses_freq_desc') . PHP_EOL; ?>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<strong><?= text('options_opt_game_weapons'); ?></strong>
+					<?= text('options_opt_game_weapons_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_game_grenades'); ?></strong>
+					<?= text('options_opt_game_grenades_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_game_friendlyfire'); ?></strong>
+					<?= text('options_opt_game_friendlyfire_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_game_bullettime'); ?></strong>
+					<?= text('options_opt_game_bullettime_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_game_sensitivity'); ?></strong>
+					<?= text('options_opt_game_sensitivity_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_opt_net'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_opt_net_connection'); ?></strong>
+					<?= text('options_opt_net_connection_desc', '<em>%</em>') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_net_maxplayers'); ?></strong>
+					<?= text('options_opt_net_maxplayers_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_net_register'); ?></strong>
+					<?= text('options_opt_net_register_desc', '<em>%</em>') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_net_name'); ?></strong>
+					<?= text('options_opt_net_name_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_net_pass'); ?></strong>
+					<?= text('options_opt_net_pass_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_net_balance'); ?></strong>
+					<?= text('options_opt_net_balance_desc', '<em>%</em>') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_opt_visuals'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_opt_visuals_interface'); ?></strong>
+					<?= text('options_opt_visuals_interface_desc', '<em>%</em>') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_visuals_playerindicator'); ?></strong>
+					<?= text('options_opt_visuals_playerindicator_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_visuals_sniperline'); ?></strong>
+					<?= text('options_opt_visuals_sniperline_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_opt_bots'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_opt_bots_difficulty'); ?></strong>
+					<?= text('options_opt_bots_difficulty_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_bots_chat'); ?></strong>
+					<?= text('options_opt_bots_chat_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_opt_sound'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_opt_sound_vol'); ?></strong>
+					<?= text('options_opt_sound_vol_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_sound_musicvol'); ?></strong>
+					<?= text('options_opt_sound_musicvol_desc', '<em>%</em>') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_sound_explosion'); ?></strong>
+					<?= text('options_opt_sound_explosion_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_sound_distant'); ?></strong>
+					<?= text('options_opt_sound_distant_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_opt_sound_music'); ?></strong>
+					<?= text('options_opt_sound_music_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+	</ul>
 	<hr>
 	<h3 id="screen"><?= text('screen_title'); ?></h3>
 	<hr>

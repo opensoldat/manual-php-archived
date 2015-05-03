@@ -301,6 +301,196 @@
 			</ul>
 		</li>
 	</ul>
+	<br>
+	<h4><?= text('options_start'); ?></h4>
+	<ul class="options">
+		<li>
+			<strong><?= text('options_start_kills'); ?></strong>
+			<?= text('options_start_kills_desc', '<em>%</em>') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('options_start_capture'); ?></strong>
+			<?= text('options_start_capture_desc', '<em>%</em>') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('options_start_time'); ?></strong>
+			<?= text('options_start_time_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('options_start_survival'); ?></strong>
+			<?= text('options_start_survival_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('options_start_realistic'); ?></strong>
+			<?= text('options_start_realistic_desc') . PHP_EOL; ?>
+			<ul>
+				<li><?= text('options_start_realistic_desc_0'); ?></li>
+				<li><?= text('options_start_realistic_desc_1'); ?></li>
+				<li><?= text('options_start_realistic_desc_2'); ?></li>
+				<li><?= text('options_start_realistic_desc_3'); ?></li>
+				<li><?= text('options_start_realistic_desc_4'); ?></li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_start_loop'); ?></strong>
+			<?= text('options_start_loop_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('options_start_bots'); ?></strong>
+			<?= text('options_start_bots_desc') . PHP_EOL; ?>
+		</li>
+	</ul>
+	<br>
+	<h4><?= text('options_setup'); ?></h4>
+	<ul class="options">
+		<li>
+			<strong><?= text('options_setup_gfx'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_setup_gfx_fullscreen'); ?></strong>
+					<?= text('options_setup_gfx_fullscreen_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_gfx_dithering'); ?></strong>
+					<?= text('options_setup_gfx_dithering_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_gfx_antialiasing'); ?></strong>
+					<?= text('options_setup_gfx_antialiasing_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_gfx_bitrate'); ?></strong>
+					<?= text('options_setup_gfx_bitrate_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_gfx_refresh'); ?></strong>
+					<?= text('options_setup_gfx_refresh_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_gfx_adapter'); ?></strong>
+					<?= text('options_setup_gfx_adapter_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_setup_sound'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_setup_sound_quality'); ?></strong>
+					<?= text('options_setup_sound_quality_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_sound_device'); ?></strong>
+					<?= text('options_setup_sound_device_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_sound_driver'); ?></strong>
+					<?= text('options_setup_sound_driver_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_setup_perf'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_setup_perf_particles'); ?></strong>
+					<?= text('options_setup_perf_particles_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_perf_botquality'); ?></strong>
+					<?= text('options_setup_perf_botquality_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_perf_trails'); ?></strong>
+					<?= text('options_setup_perf_trails_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_perf_weather'); ?></strong>
+					<?= text('options_setup_perf_weather_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_perf_smooth'); ?></strong>
+					<?= text('options_setup_perf_smooth_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_perf_death'); ?></strong>
+					<?= text('options_setup_perf_death_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_perf_logging'); ?></strong>
+					<?= text('options_setup_perf_logging_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_perf_autorecord'); ?></strong>
+					<?= text('options_setup_perf_autorecord_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_setup_net'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_setup_net_port'); ?></strong>
+					<?= text('options_setup_net_port_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_net_speed'); ?></strong>
+					<?= text('options_setup_net_speed_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_net_ping'); ?></strong>
+					<?= text('options_setup_net_ping_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_net_msg'); ?></strong>
+					<?= text('options_setup_net_msg_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_net_forward'); ?></strong>
+					<?= text('options_setup_net_forward_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_net_ase'); ?></strong>
+					<?= text('options_setup_net_ase_desc', '<a href="%">%</a>') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_net_link'); ?></strong>
+					<?= text('options_setup_net_link_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong><?= text('options_setup_more'); ?></strong>
+			<ul>
+				<li>
+					<strong><?= text('options_setup_more_compat'); ?></strong>
+					<?= text('options_setup_more_compat_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_more_software'); ?></strong>
+					<?= text('options_setup_more_software_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_more_blankfix'); ?></strong>
+					<?= text('options_setup_more_blankfix_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_more_filter'); ?></strong>
+					<?= text('options_setup_more_filter_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_more_backbuffer'); ?></strong>
+					<?= text('options_setup_more_backbuffer_desc') . PHP_EOL; ?>
+				</li>
+				<li>
+					<strong><?= text('options_setup_more_lang'); ?></strong>
+					<?= text('options_setup_more_lang_desc') . PHP_EOL; ?>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<br>
+	<p><em><?= text('options_footnote'); ?></em></p>
 	<hr>
 	<h3 id="screen"><?= text('screen_title'); ?></h3>
 	<hr>

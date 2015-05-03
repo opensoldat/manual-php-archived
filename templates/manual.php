@@ -162,7 +162,7 @@
 			<h4><?= text('modes_htf'); ?></h4>
 			<p><?= text('modes_htf_desc'); ?></p>
 		</li>
-	</ol>
+	</ul>
 	<hr>
 	<h3 id="options"><?= text('options_title'); ?></h3>
 	<hr>

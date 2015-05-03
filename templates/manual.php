@@ -303,7 +303,7 @@
 	</ul>
 	<br>
 	<h4><?= text('options_start'); ?></h4>
-	<ul class="options">
+	<ul>
 		<li>
 			<strong><?= text('options_start_kills'); ?></strong>
 			<?= text('options_start_kills_desc', '<em>%</em>') . PHP_EOL; ?>

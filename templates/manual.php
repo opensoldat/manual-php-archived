@@ -891,6 +891,11 @@
 	</ul>
 	<hr>
 	<h3 id="chat"><?= text('chat_title'); ?></h3>
+	<p><?= text('chat_intro', '<em>%</em>'); ?></p>
+	<h4><?= text('chat_taunts'); ?></h4>
+	<p><?= text('chat_taunts_desc', '<em>%</em>'); ?></p>
+	<h4><?= text('chat_teamchat'); ?></h4>
+	<p><?= text('chat_teamchat_desc'); ?></p>
 	<hr>
 	<h3 id="server"><?= text('server_title'); ?></h3>
 	<hr>

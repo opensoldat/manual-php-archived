@@ -493,6 +493,26 @@
 	<p><em><?= text('options_footnote'); ?></em></p>
 	<hr>
 	<h3 id="screen"><?= text('screen_title'); ?></h3>
+	<h4><?= text('screen_hud'); ?></h4>
+	<p><?= img('paski.png'); ?></p>
+	<p><?= text('screen_bars'); ?></p>
+	<ul>
+		<li><?= text('screen_bars_health',   '<strong>%</strong>'); ?></li>
+		<li><?= text('screen_bars_ammo',     '<strong>%</strong>'); ?></li>
+		<li><?= text('screen_bars_interval', '<strong>%</strong>'); ?></li>
+		<li><?= text('screen_bars_jet',      '<strong>%</strong>'); ?></li>
+	</ul>
+	<p><?= text('screen_status', '<strong>%</strong>', '<em>%</em>'); ?></p>
+	<ul>
+		<li><?= text('screen_status_place', '<strong>%</strong>'); ?></li>
+		<li><?= text('screen_status_kills', '<strong>%</strong>'); ?></li>
+		<li><?= text('screen_status_limit', '<strong>%</strong>'); ?></li>
+	</ul>
+	<p><?= text('screen_lag'); ?></p>
+	<p><?= img('teamscore.png'); ?></p>
+	<p><?= text('screen_teamscore', '<em>%</em>'); ?></p>
+	<p><?= img('flags.png'); ?></p>
+	<p><?= text('screen_flags', '<em>%</em>'); ?></p>
 	<hr>
 	<h3 id="weapons"><?= text('weapons_title'); ?></h3>
 	<hr>

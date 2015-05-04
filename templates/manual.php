@@ -647,6 +647,248 @@
 	</ul>
 	<hr>
 	<h3 id="commands"><?= text('commands_title'); ?></h3>
+	<p><?= text('commands_intro'); ?></p>
+	<h4><?= text('commands_player'); ?></h4>
+	<table>
+		<tr>
+			<td><?= text('commands_player_kill'); ?></td>
+			<td><?= text('commands_player_kill_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_player_brutalkill'); ?></td>
+			<td><?= text('commands_player_brutalkill_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_player_smoke'); ?></td>
+			<td><?= text('commands_player_smoke_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_player_tabac'); ?></td>
+			<td><?= text('commands_player_tabac_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_player_takeoff'); ?></td>
+			<td><?= text('commands_player_takeoff_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_player_victory'); ?></td>
+			<td><?= text('commands_player_victory_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_player_pause'); ?></td>
+			<td><?= text('commands_player_pause_desc'); ?></td>
+		</tr>
+	</table>
+	<br>
+	<h4><?= text('commands_server'); ?></h4>
+	<table>
+		<tr>
+			<td><?= text('commands_server_addbot'); ?></td>
+			<td><?= text('commands_server_addbot_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_kick'); ?></td>
+			<td><?= text('commands_server_kick_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_ban'); ?></td>
+			<td><?= text('commands_server_ban_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_banip'); ?></td>
+			<td><?= text('commands_server_banip_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_unban'); ?></td>
+			<td><?= text('commands_server_unban_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_map'); ?></td>
+			<td><?= text('commands_server_map_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_restart'); ?></td>
+			<td><?= text('commands_server_restart_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_nextmap'); ?></td>
+			<td><?= text('commands_server_nextmap_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_adm'); ?></td>
+			<td><?= text('commands_server_adm_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_admip'); ?></td>
+			<td><?= text('commands_server_admip_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_unadm'); ?></td>
+			<td><?= text('commands_server_unadm_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_kicklast'); ?></td>
+			<td><?= text('commands_server_kicklast_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_respawntime'); ?></td>
+			<td><?= text('commands_server_respawntime_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_maxrespawntime'); ?></td>
+			<td><?= text('commands_server_maxrespawntime_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_limit'); ?></td>
+			<td><?= text('commands_server_limit_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_timelimit'); ?></td>
+			<td><?= text('commands_server_timelimit_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_password'); ?></td>
+			<td><?= text('commands_server_password_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_setteam'); ?></td>
+			<td><?= text('commands_server_setteam_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_addbotx'); ?></td>
+			<td><?= text('commands_server_addbotx_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_friendlyfire'); ?></td>
+			<td><?= text('commands_server_friendlyfire_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_vote'); ?></td>
+			<td><?= text('commands_server_vote_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_bonus'); ?></td>
+			<td><?= text('commands_server_bonus_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_maxplayers'); ?></td>
+			<td><?= text('commands_server_maxplayers_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_loadcon'); ?></td>
+			<td><?= text('commands_server_loadcon_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_loadlist'); ?></td>
+			<td><?= text('commands_server_loadlist_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_loadwep'); ?></td>
+			<td><?= text('commands_server_loadwep_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_gamemode'); ?></td>
+			<td><?= text('commands_server_gamemode_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_realistic'); ?></td>
+			<td><?= text('commands_server_realistic_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_advance'); ?></td>
+			<td><?= text('commands_server_advance_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_survival'); ?></td>
+			<td><?= text('commands_server_survival_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_kill'); ?></td>
+			<td><?= text('commands_server_kill_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_banlast'); ?></td>
+			<td><?= text('commands_server_banlast_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_unbanlast'); ?></td>
+			<td><?= text('commands_server_unbanlast_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_lobby'); ?></td>
+			<td><?= text('commands_server_lobby_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_server_say'); ?></td>
+			<td><?= text('commands_server_say_desc'); ?></td>
+		</tr>
+	</table>
+	<br>
+	<h4><?= text('commands_clientserver'); ?></h4>
+	<table>
+		<tr>
+			<td><?= text('commands_clientserver_adminlog'); ?></td>
+			<td><?= text('commands_clientserver_adminlog_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_clientserver_info'); ?></td>
+			<td><?= text('commands_clientserver_info_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_clientserver_mute'); ?></td>
+			<td><?= text('commands_clientserver_mute_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_clientserver_unmute'); ?></td>
+			<td><?= text('commands_clientserver_unmute_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_clientserver_record'); ?></td>
+			<td><?= text('commands_clientserver_record_desc'); ?></td>
+		</tr>
+		<tr>
+			<td><?= text('commands_clientserver_stop'); ?></td>
+			<td><?= text('commands_clientserver_stop_desc'); ?></td>
+		</tr>
+	</table>
+	<br>
+	<h4><?= text('commands_cli'); ?></h4>
+	<p><?= text('commands_cli_intro'); ?></p>
+	<ul>
+		<li>
+			<?= text('commands_cli_dedicated', '<strong>%</strong>') . PHP_EOL; ?>
+			<p><?= text('commands_cli_dedicated_desc'); ?></p>
+		</li>
+		<li>
+			<?= text('commands_cli_start', '<strong>%</strong>') . PHP_EOL; ?>
+			<p><?= text('commands_cli_start_desc'); ?></p>
+		</li>
+		<li>
+			<?= text('commands_cli_dedicatedstart', '<strong>%</strong>') . PHP_EOL; ?>
+			<p><?= text('commands_cli_dedicatedstart_desc'); ?></p>
+		</li>
+		<li>
+			<?= text('commands_cli_join', '<strong>%</strong>') . PHP_EOL; ?>
+			<p><?= text('commands_cli_join_desc', '<em>%</em>'); ?></p>
+			<p><?= text('commands_cli_join_example'); ?></p>
+		</li>
+		<li>
+			<?= text('commands_cli_demo', '<strong>%</strong>') . PHP_EOL; ?>
+			<p><?= text('commands_cli_demo_desc', '<em>%</em>'); ?></p>
+			<ul class="flat">
+				<li><?= text('commands_cli_demo_freecam'); ?></li>
+				<li><?= text('commands_cli_demo_speed'); ?></li>
+				<li><?= text('commands_cli_demo_notexts'); ?></li>
+				<li><?= text('commands_cli_demo_extract'); ?></li>
+			</ul>
+			<p><?= text('commands_cli_demo_sound'); ?></p>
+			<p><?= text('commands_cli_demo_example'); ?></p>
+		</li>
+		<li>
+			<?= text('commands_cli_mod', '<strong>%</strong>') . PHP_EOL; ?>
+			<p><?= text('commands_cli_mod_desc'); ?></p>
+		</li>
+	</ul>
 	<hr>
 	<h3 id="chat"><?= text('chat_title'); ?></h3>
 	<hr>

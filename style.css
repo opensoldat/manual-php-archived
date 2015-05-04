@@ -15,6 +15,9 @@ ul li:before {content:'-';position:absolute;left:-1.2em;}
 ol {counter-reset:counter;}
 ol li {position:relative;margin-left:1.5em;counter-increment:counter;}
 ol li:before {content:counter(counter, lower-alpha) ')';position:absolute;left:-1.5em;}
+table {border-collapse:collapse;font-size:smaller;}
+table td {border:1px solid #666;padding:0.5em;}
+table td:first-child {font-weight:bold;}
 
 h1:before {content:'===-=-=----- ';font-size:16px;}
 h1:after {content:' -----=-=-===';font-size:16px;}

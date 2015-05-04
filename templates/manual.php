@@ -515,6 +515,93 @@
 	<p><?= text('screen_flags', '<em>%</em>'); ?></p>
 	<hr>
 	<h3 id="weapons"><?= text('weapons_title'); ?></h3>
+	<p class="indent"><?= text('weapons_intro'); ?></p>
+	<p><?= img('guns.png'); ?></p>
+	<p><?= text('weapons_selectable'); ?></p>
+	<ol class="weapons">
+		<li>
+			<strong><?= text('weapons_eagles'); ?></strong><br>
+			<?= text('weapons_eagles_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_mp5'); ?></strong><br>
+			<?= text('weapons_mp5_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_ak74'); ?></strong><br>
+			<?= text('weapons_ak74_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_steyr'); ?></strong><br>
+			<?= text('weapons_steyr_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_spas'); ?></strong><br>
+			<?= text('weapons_spas_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_ruger'); ?></strong><br>
+			<?= text('weapons_ruger_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_m79'); ?></strong><br>
+			<?= text('weapons_m79_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_barret'); ?></strong><br>
+			<?= text('weapons_barret_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_minimi'); ?></strong><br>
+			<?= text('weapons_minimi_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_minigun'); ?></strong><br>
+			<?= text('weapons_minigun_desc') . PHP_EOL; ?>
+		</li>
+	</ol>
+	<br>
+	<p><?= text('weapons_standard'); ?></p>
+	<ul class="weapons">
+		<li>
+			<strong><?= text('weapons_ussocom'); ?></strong><br>
+			<?= text('weapons_ussocom_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_knife'); ?></strong><br>
+			<?= text('weapons_knife_desc', '<em>%</em>') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_chainsaw'); ?></strong><br>
+			<?= text('weapons_chainsaw_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_law'); ?></strong><br>
+			<?= text('weapons_law_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_fists'); ?></strong><br>
+			<?= text('weapons_fists_desc') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_grenades'); ?></strong><br>
+			<?= text('weapons_grenades_desc') . PHP_EOL; ?>
+		</li>
+	</ul>
+	<br>
+	<p><?= text('weapons_special'); ?></p>
+	<ul class="weapons">
+		<li>
+			<strong><?= text('weapons_bow'); ?></strong><br>
+			<?= text('weapons_bow_desc', '<em>%</em>') . PHP_EOL; ?>
+		</li>
+		<li>
+			<strong><?= text('weapons_flamethrower'); ?></strong><br>
+			<?= text('weapons_flamethrower_desc', '<em>%</em>') . PHP_EOL; ?>
+		</li>
+	</ul>
+	<br>
+	<p><?= text('weapons_footnote', '<em>%</em>'); ?></p>
 	<hr>
 	<h3 id="bonuses"><?= text('bonuses_title'); ?></h3>
 	<hr>

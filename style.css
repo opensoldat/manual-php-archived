@@ -38,6 +38,9 @@ h3:after {content:':';}
 .modes h4:before {content:counter(modes-counter) '. ';}
 .options > li {margin-top:1em;}
 .options ul ul > li strong {font-style:italic;}
+ol.weapons li {margin-top:1em;margin-left:2.4em;}
+ol.weapons li:before {content:counter(counter) '. ';left:-2.4em;font-weight:bold;}
+ul.weapons li {margin-top:1em;}
 
 .ctrl_wasd  {background-color:rgb(149,232,151);}
 .ctrl_mouse {background-color:rgb(255,255,255);}

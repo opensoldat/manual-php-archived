@@ -41,6 +41,8 @@ h3:after {content:':';}
 ol.weapons li {margin-top:1em;margin-left:2.4em;}
 ol.weapons li:before {content:counter(counter) '. ';left:-2.4em;font-weight:bold;}
 ul.weapons li {margin-top:1em;}
+.bonuses li {margin-top:1em;margin-left:2em;}
+.bonuses img {position:absolute;left:-2em;}
 
 .ctrl_wasd  {background-color:rgb(149,232,151);}
 .ctrl_mouse {background-color:rgb(255,255,255);}

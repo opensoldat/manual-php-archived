@@ -604,6 +604,47 @@
 	<p><?= text('weapons_footnote', '<em>%</em>'); ?></p>
 	<hr>
 	<h3 id="bonuses"><?= text('bonuses_title'); ?></h3>
+	<p><?= text('bonuses_intro'); ?></p>
+	<ul class="flat bonuses">
+		<li>
+			<?= img('medikit.png') . PHP_EOL; ?>
+			<strong><?= text('bonuses_medikit'); ?></strong>
+			<p><?= text('bonuses_medikit_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('grenadekit.png') . PHP_EOL; ?>
+			<strong><?= text('bonuses_grenades'); ?></strong>
+			<p><?= text('bonuses_grenades_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('clusterkit.png') . PHP_EOL; ?>
+			<strong><?= text('bonuses_cluster'); ?></strong>
+			<p><?= text('bonuses_cluster_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('vestkit.png') . PHP_EOL; ?>
+			<strong><?= text('bonuses_vest'); ?></strong>
+			<p><?= text('bonuses_vest_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('flamerkit.png') . PHP_EOL; ?>
+			<strong><?= text('bonuses_flamegod'); ?></strong>
+			<p><?= text('bonuses_duration', text('bonuses_duration_flamegod')); ?></p>
+			<p><?= text('bonuses_flamegod_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('berserkerkit.png') . PHP_EOL; ?>
+			<strong><?= text('bonuses_berserker'); ?></strong>
+			<p><?= text('bonuses_duration', text('bonuses_duration_berserker')); ?></p>
+			<p><?= text('bonuses_berserker_desc'); ?></p>
+		</li>
+		<li>
+			<?= img('predatorkit.png') . PHP_EOL; ?>
+			<strong><?= text('bonuses_predator'); ?></strong>
+			<p><?= text('bonuses_duration', text('bonuses_duration_predator')); ?></p>
+			<p><?= text('bonuses_predator_desc'); ?></p>
+		</li>
+	</ul>
 	<hr>
 	<h3 id="commands"><?= text('commands_title'); ?></h3>
 	<hr>

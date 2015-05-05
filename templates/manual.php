@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="top">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title><?= text('manual_title'); ?></title>
@@ -451,7 +451,7 @@
 				</li>
 				<li>
 					<strong><?= text('options_setup_net_ase'); ?></strong>
-					<?= text('options_setup_net_ase_desc', '<a href="%">%</a>') . PHP_EOL; ?>
+					<?= text('options_setup_net_ase_desc', '<a href="'.$ase_link.'">%</a>') . PHP_EOL; ?>
 				</li>
 				<li>
 					<strong><?= text('options_setup_net_link'); ?></strong>
@@ -898,16 +898,48 @@
 	<p><?= text('chat_teamchat_desc'); ?></p>
 	<hr>
 	<h3 id="server"><?= text('server_title'); ?></h3>
+	<p><?= text('server_intro'); ?></p>
+	<p><?= text('server_how'); ?></p>
+	<ol class="server">
+		<li><?= text('server_how_ini', '<em>%</em>'); ?></li>
+		<li>
+			<?= text('server_how_arg') . PHP_EOL; ?>
+			<p><?= text('server_how_arg_auto'); ?></p>
+			<ul>
+				<li><?= text('server_how_arg_auto_0'); ?></li>
+				<li><?= text('server_how_arg_auto_1'); ?></li>
+				<li><?= text('server_how_arg_auto_2'); ?></li>
+			</ul>
+		</li>
+	</ol>
+	<h4><?= text('server_admin'); ?></h4>
+	<p><?= text('server_admin_desc', '<a href="#commands">%</a>'); ?></p>
+	<h4><?= text('server_ports'); ?></h4>
+	<p><?= text('server_ports_desc_0'); ?></p>
+	<p><?= text('server_ports_desc_1'); ?></p>
 	<hr>
 	<h3 id="anticheat"><?= text('anticheat_title'); ?></h3>
+	<p><?= text('anticheat_intro_0'); ?></p>
+	<p><?= text('anticheat_intro_1'); ?></p>
+	<ol class="anticheat">
+		<li>
+			<p><?= text('anticheat_part_0', '<strong>%</strong>'); ?></p>
+			<p><?= text('anticheat_part_0_note'); ?></p>
+		</li>
+		<li><p><?= text('anticheat_part_1'); ?></p></li>
+	</ol>
+	<p><?= text('anticheat_note'); ?></p>
 	<hr>
 	<h3 id="version"><?= text('version_title'); ?></h3>
 	<hr>
 	<h3 id="license"><?= text('license_title'); ?></h3>
+	<p class="license"><?= text('license_body'); ?></p>
 	<hr>
 	<h3 id="credits"><?= text('credits_title'); ?></h3>
 	<hr>
 	<h3 id="contact"><?= text('contact_title'); ?></h3>
+	<p><?= text('contact_body', '<a href="%">%</a>'); ?></p>
 	<hr>
+	<p><a href="#top"><?= text('index_link'); ?></a></p>
 </body>
 </html>

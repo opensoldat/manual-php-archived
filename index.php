@@ -17,7 +17,8 @@ function main($args)
 
 	echo render('manual', array(
 		'register_link' => 'http://soldat.pl/en/page/register',
-		'style_prefix' => ''
+		'style_prefix' => '',
+		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye'
 	));
 }
 
@@ -48,7 +49,8 @@ function compile()
 
 	$context = array(
 		'register_link' => 'http://soldat.pl/en/page/register',
-		'style_prefix' => '../'
+		'style_prefix' => '../',
+		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye'
 	);
 
 	foreach ($languages as $locale)

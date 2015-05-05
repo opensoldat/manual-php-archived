@@ -931,6 +931,7 @@
 	<p><?= text('anticheat_note'); ?></p>
 	<hr>
 	<h3 id="version"><?= text('version_title'); ?></h3>
+	<p><?= text('version_body', '<a href="' . $changelog_link . '">%</a>'); ?></p>
 	<hr>
 	<h3 id="license"><?= text('license_title'); ?></h3>
 	<p class="license"><?= text('license_body'); ?></p>

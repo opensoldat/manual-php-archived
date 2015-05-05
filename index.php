@@ -15,11 +15,19 @@ function main($args)
 	config::$locale = get_locale();
 	load_strings(config::$locale);
 
-	echo render('manual', array(
+	$context = array(
 		'register_link' => 'http://soldat.pl/en/page/register',
 		'style_prefix' => '',
-		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye'
-	));
+		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye',
+		'changelog_link' => '?view=changelog'
+	);
+
+	$view = 'manual';
+
+	if (isset($_GET['view']) && in_array($_GET['view'], config::$views))
+		$view = $_GET['view'];
+
+	echo render($view, $context);
 }
 
 function compile()
@@ -50,7 +58,8 @@ function compile()
 	$context = array(
 		'register_link' => 'http://soldat.pl/en/page/register',
 		'style_prefix' => '../',
-		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye'
+		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye',
+		'changelog_link' => 'changelog.html'
 	);
 
 	foreach ($languages as $locale)
@@ -75,7 +84,8 @@ function compile()
 			array_map("copy", $images, $dst);
 		}
 
-		file_put_contents($outdir . $locale . '/manual.html', render('manual', $context));
+		foreach (config::$views as $view)
+			file_put_contents($outdir . $locale . '/' . $view . '.html', render($view, $context));
 	}
 
 	print('Done!' . PHP_EOL);
@@ -230,4 +240,43 @@ function del($name)
 	}
 
 	return rmdir($name);
+}
+
+function get_changelogs()
+{
+	global $strings;
+
+	$keys = array_filter(array_keys($strings), function($key) {
+		return strrpos($key, 'changelog_', -strlen($key)) !== false;
+	});
+
+	usort($keys, function($a, $b) {
+		$a = explode('_', $a);
+		$b = explode('_', $b);
+
+		if ($a[2] === 'title') $a[2] = -1;
+		if ($b[2] === 'title') $b[2] = -1;
+
+		$a0 = (int)$a[1];
+		$b0 = (int)$b[1];
+		$a1 = (int)$a[2];
+		$b1 = (int)$b[2];
+
+		return $a0 === $b0 ? $a1 - $b1 : $a0 - $b0;
+	});
+
+	$result = array();
+
+	foreach ($keys as $k)
+	{
+		$parts = explode('_', $k);
+		$index = (int)$parts[1];
+
+		if (!isset($result[$index]))
+			$result[$index] = array('title' => $k, 'content' => array());
+		else
+			$result[$index]['content'][] = $k;
+	}
+
+	return array_reverse($result);
 }

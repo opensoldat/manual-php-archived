@@ -521,44 +521,44 @@
 	<p><?= text('weapons_selectable'); ?></p>
 	<ol class="weapons">
 		<li>
-			<strong><?= text('weapons_eagles'); ?></strong><br>
-			<?= text('weapons_eagles_desc') . PHP_EOL; ?>
+			<?= text('weapons_eagles') . PHP_EOL; ?>
+			<p><?= text('weapons_eagles_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_mp5'); ?></strong><br>
-			<?= text('weapons_mp5_desc') . PHP_EOL; ?>
+			<?= text('weapons_mp5') . PHP_EOL; ?>
+			<p><?= text('weapons_mp5_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_ak74'); ?></strong><br>
-			<?= text('weapons_ak74_desc') . PHP_EOL; ?>
+			<?= text('weapons_ak74') . PHP_EOL; ?>
+			<p><?= text('weapons_ak74_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_steyr'); ?></strong><br>
-			<?= text('weapons_steyr_desc') . PHP_EOL; ?>
+			<?= text('weapons_steyr') . PHP_EOL; ?>
+			<p><?= text('weapons_steyr_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_spas'); ?></strong><br>
-			<?= text('weapons_spas_desc') . PHP_EOL; ?>
+			<?= text('weapons_spas') . PHP_EOL; ?>
+			<p><?= text('weapons_spas_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_ruger'); ?></strong><br>
-			<?= text('weapons_ruger_desc') . PHP_EOL; ?>
+			<?= text('weapons_ruger') . PHP_EOL; ?>
+			<p><?= text('weapons_ruger_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_m79'); ?></strong><br>
-			<?= text('weapons_m79_desc') . PHP_EOL; ?>
+			<?= text('weapons_m79') . PHP_EOL; ?>
+			<p><?= text('weapons_m79_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_barret'); ?></strong><br>
-			<?= text('weapons_barret_desc') . PHP_EOL; ?>
+			<?= text('weapons_barret') . PHP_EOL; ?>
+			<p><?= text('weapons_barret_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_minimi'); ?></strong><br>
-			<?= text('weapons_minimi_desc') . PHP_EOL; ?>
+			<?= text('weapons_minimi') . PHP_EOL; ?>
+			<p><?= text('weapons_minimi_desc') . PHP_EOL; ?></p>
 		</li>
 		<li>
-			<strong><?= text('weapons_minigun'); ?></strong><br>
-			<?= text('weapons_minigun_desc') . PHP_EOL; ?>
+			<?= text('weapons_minigun') . PHP_EOL; ?>
+			<p><?= text('weapons_minigun_desc') . PHP_EOL; ?></p>
 		</li>
 	</ol>
 	<br>
@@ -924,10 +924,10 @@
 	<p><?= text('anticheat_intro_1'); ?></p>
 	<ol class="anticheat">
 		<li>
-			<p><?= text('anticheat_part_0', '<strong>%</strong>'); ?></p>
+			<?= text('anticheat_part_0', '<strong>%</strong>') . PHP_EOL; ?>
 			<p><?= text('anticheat_part_0_note'); ?></p>
 		</li>
-		<li><p><?= text('anticheat_part_1'); ?></p></li>
+		<li><?= text('anticheat_part_1'); ?></li>
 	</ol>
 	<p><?= text('anticheat_note'); ?></p>
 	<hr>

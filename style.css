@@ -41,15 +41,19 @@ h3:after {content:':';}
 .modes h4:before {content:counter(modes-counter) '. ';}
 .options > li {margin-top:1em;}
 .options ul ul > li strong {font-style:italic;}
-ol.weapons li {margin-top:1em;margin-left:2.4em;}
-ol.weapons li:before {content:counter(counter) '. ';left:-2.4em;font-weight:bold;}
+ol.weapons {padding-left:2.5em;list-style:decimal outside;}
+ol.weapons li {margin-top:1em;margin-left:0;font-weight:bold;}
+ol.weapons li p {margin:0;font-weight:normal;}
+ol.weapons li:before {content:'';}
 ul.weapons li {margin-top:1em;}
 .bonuses li {margin-top:1em;margin-left:2em;}
 .bonuses img {position:absolute;left:-2em;}
-.server > li {margin-top:1em;margin-left:1.5em;}
-.server > li:before {content:counter(counter) '. ';left:-1.5em;}
-.anticheat > li {margin-top:1em;margin-left:2.4em;}
-.anticheat > li:before {content:counter(counter, upper-roman) '. ';left:-2.4em;}
+ol.server {list-style:decimal outside;padding-left:2em;}
+ol.server > li {margin-top:1em;margin-left:0;}
+ol.server > li:before {content:'';}
+ol.anticheat {list-style:upper-roman outside;padding-left:2.5em;}
+ol.anticheat > li {margin-top:1em;margin-left:0;}
+ol.anticheat > li:before {content:'';}
 .license {width:600px;}
 .changelog ul {margin-bottom:1em;}
 .credits {text-align:center;font-weight:bold;margin:4em 0;}

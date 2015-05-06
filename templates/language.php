@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<title>Soldat - Manual</title>
-	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>language.css">
+	<link rel="stylesheet" type="text/css" href="css/language.css">
 </head>
 <body>
 	<img src="images/indextitle.gif">

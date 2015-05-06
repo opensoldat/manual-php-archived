@@ -52,6 +52,7 @@ ul.weapons li {margin-top:1em;}
 .anticheat > li:before {content:counter(counter, upper-roman) '. ';left:-2.4em;}
 .license {width:600px;}
 .changelog ul {margin-bottom:1em;}
+.credits {text-align:center;font-weight:bold;margin:4em 0;}
 
 .ctrl_wasd  {background-color:rgb(149,232,151);}
 .ctrl_mouse {background-color:rgb(255,255,255);}

@@ -2,7 +2,7 @@
 <html id="top">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<title><?= text('manual_title'); ?></title>
+	<title><?= text('main_title', text('manual_title')); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>style.css">
 </head>
 <body>
@@ -451,7 +451,8 @@
 				</li>
 				<li>
 					<strong><?= text('options_setup_net_ase'); ?></strong>
-					<?= text('options_setup_net_ase_desc', '<a href="'.$ase_link.'">%</a>') . PHP_EOL; ?>
+					<?= text('options_setup_net_ase_desc',
+						'<a href="' . $links['ase'] . '">%</a>') . PHP_EOL; ?>
 				</li>
 				<li>
 					<strong><?= text('options_setup_net_link'); ?></strong>
@@ -937,6 +938,137 @@
 	<p class="license"><?= text('license_body'); ?></p>
 	<hr>
 	<h3 id="credits"><?= text('credits_title'); ?></h3>
+	<p class="credits"><?= text('credits_header'); ?></p>
+	<h4><?= text('credits_devteam'); ?></h4>
+	<ul class="flat">
+		<li><?= text('credits_devteam_shoozza', '<a href="' . $links['shoozza'] . '">%</a>'); ?></li>
+		<li><?= text('credits_devteam_zakath'); ?></li>
+		<li><?= text('credits_devteam_jrgp'); ?></li>
+		<li><?= text('credits_devteam_skoskav'); ?></li>
+		<li><?= text('credits_devteam_falcon'); ?></li>
+		<li><?= text('credits_devteam_exhunter'); ?></li>
+	</ul>
+	<h4><?= text('credits_former'); ?></h4>
+	<ul class="flat">
+		<li><?= text('credits_former_fryer'); ?></li>
+		<li><?= text('credits_former_rekot'); ?></li>
+		<li><?= text('credits_former_tmtgr'); ?></li>
+		<li><?= text('credits_former_enesce', '<a href="' . $links['enesce'] . '">%</a>'); ?></li>
+		<li><?= text('credits_former_chrisgbk'); ?></li>
+		<li><?= text('credits_former_mm'); ?></li>
+	</ul>
+	<h4><?= text('credits_lobby'); ?></h4>
+	<ul class="flat">
+		<li><?= text('credits_lobby_flieslikeabrick',
+			'<a href="' . $links['flieslikeabrick'] . '">%</a>'); ?></li>
+		<li><?= text('credits_lobby_jrgp'); ?></li>
+	</ul>
+	<h4><?= text('credits_music'); ?></h4>
+	<ul class="flat">
+		<li><?= text('credits_music_bsg', '<a href="' . $links['tablatures'] . '">%</a>'); ?></li>
+	</ul>
+	<h4><?= text('credits_maps'); ?></h4>
+	<ul class="flat">
+		<li><?= text('credits_maps_xtender'); ?></li>
+		<li><?= text('credits_maps_chakapoko'); ?></li>
+		<li><?= text('credits_maps_avarax'); ?></li>
+		<li><?= text('credits_maps_viggoloniggolo'); ?></li>
+		<li><?= text('credits_maps_doggfather'); ?></li>
+		<li><?= text('credits_maps_deo'); ?></li>
+		<li><?= text('credits_maps_boxo'); ?></li>
+		<li><?= text('credits_maps_enjoyincubus'); ?></li>
+		<li><?= text('credits_maps_sticky'); ?></li>
+		<li><?= text('credits_maps_granddiablo'); ?></li>
+		<li><?= text('credits_maps_demonic'); ?></li>
+		<li><?= text('credits_maps_troskal'); ?></li>
+		<li><?= text('credits_maps_michal'); ?></li>
+		<li><?= text('credits_maps_geologist'); ?></li>
+		<li><?= text('credits_maps_demonic_again'); ?></li>
+		<li><?= text('credits_maps_keroncyst'); ?></li>
+	</ul>
+	<p><?= text('credits_waypoints'); ?></p>
+	<?= text('credits_remakes') . PHP_EOL; ?>
+	<ul class="flat">
+		<li><?= text('credits_remakes_nuzz'); ?></li>
+		<li><?= text('credits_remakes_stalky'); ?></li>
+		<li><?= text('credits_remakes_granddiablo'); ?></li>
+	</ul>
+	<br>
+	<?= text('credits_improved') . PHP_EOL; ?>
+	<ul class="flat">
+		<li><?= text('credits_improved_enjoyincubus'); ?></li>
+	</ul>
+	<h4><?= text('credits_interfaces'); ?></h4>
+	<ul class="flat">
+		<li><?= text('credits_interfaces_nightcabbage'); ?></li>
+		<li><?= text('credits_interfaces_granddiablo'); ?></li>
+		<li><?= text('credits_interfaces_urhos'); ?></li>
+		<li><?= text('credits_interfaces_michal'); ?></li>
+	</ul>
+	<p><?= text('credits_evo'); ?></p>
+	<h4><?= text('credits_translations'); ?></h4>
+	<p><?= text('credits_translations_intro'); ?></p>
+	<ul class="flat">
+		<li><?= text('credits_translations_belarussian'); ?></li>
+		<li><?= text('credits_translations_brazilian'); ?></li>
+		<li><?= text('credits_translations_catalan'); ?></li>
+		<li><?= text('credits_translations_chinesetrad'); ?></li>
+		<li><?= text('credits_translations_croatian'); ?></li>
+		<li><?= text('credits_translations_czech'); ?></li>
+		<li><?= text('credits_translations_dutch'); ?></li>
+		<li><?= text('credits_translations_estonian'); ?></li>
+		<li><?= text('credits_translations_finnish'); ?></li>
+		<li><?= text('credits_translations_french'); ?></li>
+		<li><?= text('credits_translations_german'); ?></li>
+		<li><?= text('credits_translations_greek'); ?></li>
+		<li><?= text('credits_translations_hebrew'); ?></li>
+		<li><?= text('credits_translations_hungarian'); ?></li>
+		<li><?= text('credits_translations_italian'); ?></li>
+		<li><?= text('credits_translations_japanese'); ?></li>
+		<li><?= text('credits_translations_korean'); ?></li>
+		<li><?= text('credits_translations_lithuanian'); ?></li>
+		<li><?= text('credits_translations_norwegian'); ?></li>
+		<li><?= text('credits_translations_polish'); ?></li>
+		<li><?= text('credits_translations_russian'); ?></li>
+		<li><?= text('credits_translations_slovak'); ?></li>
+		<li><?= text('credits_translations_spanish'); ?></li>
+		<li><?= text('credits_translations_swedish'); ?></li>
+		<li><?= text('credits_translations_thai'); ?></li>
+		<li><?= text('credits_translations_turkish'); ?></li>
+		<li><?= text('credits_translations_ukrainian'); ?></li>
+	</ul>
+	<h4><?= text('credits_tools'); ?></h4>
+	<ul>
+		<li><?= text('credits_tools_borland',            '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_dx8',                '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_fmod',               '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_flatstyle',          '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_tntunicodecontrols', '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_blackudp'                               ); ?></li>
+		<li><?= text('credits_tools_indy',               '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_modeenumunit',       '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_dcpcrypt',           '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_zlib',               '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_jvcl',               '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_remobjects',         '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_tools_autoupgraderpro',    '<a href="%">%</a>'); ?></li>
+	</ul>
+	<h4><?= text('credits_thanks'); ?></h4>
+	<ul>
+		<li><?= text('credits_thanks_community'); ?></li>
+		<li><?= text('credits_thanks_warsztat', '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_thanks_jakobsen', '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_thanks_number27'); ?></li>
+		<li><?= text('credits_thanks_flieslikeabrick', '<a href="%">%</a>'); ?></li>
+		<li><?= text('credits_thanks_dnastyx'); ?></li>
+		<li><?= text('credits_thanks_communitymembers'); ?></li>
+		<li><?= text('credits_thanks_betatesting'); ?></li>
+		<li><?= text('credits_thanks_dolny'); ?></li>
+		<li><?= text('credits_thanks_trssam'); ?></li>
+		<li><?= text('credits_thanks_testedsoldat'); ?></li>
+		<li><?= text('credits_thanks_misc'); ?></li>
+		<li><?= text('credits_thanks_notreminded'); ?></li>
+	</ul>
 	<hr>
 	<h3 id="contact"><?= text('contact_title'); ?></h3>
 	<p><?= text('contact_body', '<a href="%">%</a>'); ?></p>

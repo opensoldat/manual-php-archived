@@ -18,8 +18,8 @@ function main($args)
 	$context = array(
 		'register_link' => 'http://soldat.pl/en/page/register',
 		'style_prefix' => '',
-		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye',
-		'changelog_link' => '?view=changelog'
+		'changelog_link' => '?view=changelog',
+		'links' => config::$links
 	);
 
 	$view = 'manual';
@@ -58,8 +58,8 @@ function compile()
 	$context = array(
 		'register_link' => 'http://soldat.pl/en/page/register',
 		'style_prefix' => '../',
-		'ase_link' => 'http://en.wikipedia.org/wiki/The_All-Seeing_Eye',
-		'changelog_link' => 'changelog.html'
+		'changelog_link' => 'changelog.html',
+		'links' => config::$links
 	);
 
 	foreach ($languages as $locale)

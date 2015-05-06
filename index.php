@@ -17,6 +17,7 @@ function main($args)
 
 	$context = array(
 		'style_prefix' => 'css/',
+		'images_prefix' => 'images/',
 		'links' => config::$links,
 		'locale_list' => get_locale_list()
 	);
@@ -54,6 +55,7 @@ function compile()
 
 	$context = array(
 		'style_prefix' => '../css/',
+		'images_prefix' => '../images/',
 		'links' => config::$links,
 		'locale_list' => $locale_list
 	);

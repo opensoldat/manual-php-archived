@@ -2,6 +2,7 @@
 <html id="top">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="<?= $images_prefix; ?>favicon.ico">
 	<title><?= text('main_title', text('manual_title')); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>manual.css">
 </head>

@@ -16,13 +16,12 @@ function main($args)
 	load_strings(config::$locale);
 
 	$context = array(
-		'register_link' => 'http://soldat.pl/en/page/register',
-		'style_prefix' => '',
-		'changelog_link' => '?view=changelog',
-		'links' => config::$links
+		'style_prefix' => 'css/',
+		'links' => config::$links,
+		'locale_list' => get_locale_list()
 	);
 
-	$view = 'manual';
+	$view = 'language';
 
 	if (isset($_GET['view']) && in_array($_GET['view'], config::$views))
 		$view = $_GET['view'];
@@ -32,6 +31,7 @@ function main($args)
 
 function compile()
 {
+	config::$compiling = true;
 	$outdir = config::$compile_dir;
 
 	print('Cleaning up...' . PHP_EOL);
@@ -43,26 +43,22 @@ function compile()
 
 	mkdir($outdir);
 	mkdir($outdir . 'images/');
+	mkdir($outdir . 'css/');
 
-	$copy_src = glob('images/*.*');
-	$copy_src[] = 'style.css';
+	$copy_src = array_merge(glob('images/*.*'), glob('css/*.*'));
 	$copy_dst = array_map(function($name) use($outdir) { return $outdir . $name; }, $copy_src);
 
 	array_map("copy", $copy_src, $copy_dst);
 
-	config::$images_prefix = '../images/';
-	config::$images_prefix_localized = 'images/';
-
-	$languages = array_map(function($name) { return basename($name, '.php'); }, glob('i18n/*.php'));
+	$locale_list = get_locale_list();
 
 	$context = array(
-		'register_link' => 'http://soldat.pl/en/page/register',
-		'style_prefix' => '../',
-		'changelog_link' => 'changelog.html',
-		'links' => config::$links
+		'style_prefix' => '../css/',
+		'links' => config::$links,
+		'locale_list' => $locale_list
 	);
 
-	foreach ($languages as $locale)
+	foreach ($locale_list as $locale)
 	{
 		print('Compiling ' . $locale . '...' . PHP_EOL);
 
@@ -84,11 +80,27 @@ function compile()
 			array_map("copy", $images, $dst);
 		}
 
+		file_put_contents($outdir . 'index.html', render('language', $context));
+
 		foreach (config::$views as $view)
 			file_put_contents($outdir . $locale . '/' . $view . '.html', render($view, $context));
 	}
 
 	print('Done!' . PHP_EOL);
+}
+
+function get_locale_list()
+{
+	$list = array_map(function($name) { return basename($name, '.php'); }, glob('i18n/*.php'));
+	$order = config::$locale_names;
+
+	// return the list in the same order as the locale_names array
+
+	usort($list, function($a, $b) use($order) {
+		return (int)array_search($a, $order, true) - (int)array_search($b, $order, true);
+	});
+
+	return $list;
 }
 
 function get_locale()
@@ -102,6 +114,23 @@ function get_locale()
 	}
 
 	return 'en_US';
+}
+
+function get_locale_name($locale)
+{
+	return isset(config::$locale_names[$locale]) ? config::$locale_names[$locale] : $locale;
+}
+
+// used for internal links. makes it work as php site or static compiled site
+function get_link($view, $locale = null, $from_root = false)
+{
+	if ($locale === null)
+		$locale = config::$locale;
+
+	if (config::$compiling)
+		return ($from_root ? $locale . '/' : '') . $view . '.html';
+	else
+		return '?view=' . $view . '&amp;lang=' . $locale;
 }
 
 function load_strings($locale)
@@ -126,10 +155,20 @@ function render($file, $context = array())
 
 function img($path)
 {
-	if (file_exists('images/' . config::$locale . '/' . $path))
-		return '<img src="' . config::$images_prefix_localized . $path . '">';
+	$localized = file_exists('images/' . config::$locale . '/' . $path);
 
-	return '<img src="' . config::$images_prefix . $path . '">';
+	if (config::$compiling)
+	{
+		return $localized ?
+			'<img src="images/' . $path . '">' :
+			'<img src="../images/' . $path . '">';
+	}
+	else
+	{
+		return $localized ?
+			'<img src="images/' . config::$locale . '/' . $path . '">' :
+			'<img src="images/' . $path . '">';
+	}
 }
 
 function text($id)

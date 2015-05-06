@@ -1,0 +1,7 @@
+html {max-width:980px;margin:0 auto;}
+body {margin:0;background:#5a9431;text-align:center;font-family:Arial;font-size:large;}
+h1 {font-size:large;margin:2em 0 1em;color:white;}
+ul {list-style:none;margin:0;padding:0;}
+li {margin:0;font-weight:bold;margin:1em 0;}
+a {text-decoration:none;color:#000;}
+a:hover {text-decoration:underline;}

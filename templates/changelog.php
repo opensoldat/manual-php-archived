@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title><?= text('main_title', text('version_title')); ?></title>
-	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>style.css">
+	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>manual.css">
 </head>
 <body class="changelog">
 	<div class="header">

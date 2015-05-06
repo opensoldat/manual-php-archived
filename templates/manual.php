@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title><?= text('main_title', text('manual_title')); ?></title>
-	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>style.css">
+	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>manual.css">
 </head>
 <body>
 	<div class="header">
@@ -31,7 +31,7 @@
 			<li><a href="#credits"><?=   text('credits_title');   ?></a></li>
 			<li><a href="#contact"><?=   text('contact_title');   ?></a></li>
 		</ul>
-		<?= text('index_reg_info', '<a href="' . $register_link . '">%</a>') . PHP_EOL; ?>
+		<?= text('index_reg_info', '<a href="' . get_link('register') . '">%</a>') . PHP_EOL; ?>
 		<hr>
 	</div>
 	<h3 id="intro"><?= text('intro_title'); ?></h3>
@@ -932,7 +932,7 @@
 	<p><?= text('anticheat_note'); ?></p>
 	<hr>
 	<h3 id="version"><?= text('version_title'); ?></h3>
-	<p><?= text('version_body', '<a href="' . $changelog_link . '">%</a>'); ?></p>
+	<p><?= text('version_body', '<a href="' . get_link('changelog') . '">%</a>'); ?></p>
 	<hr>
 	<h3 id="license"><?= text('license_title'); ?></h3>
 	<p class="license"><?= text('license_body'); ?></p>

@@ -3,11 +3,11 @@
 class config
 {
 	static public $locale = 'en_US';
-	static public $images_prefix = 'images/';
-	static public $images_prefix_localized = 'images/en_US/';
+	static public $compiling = false;
 	static public $compile_dir = '_compiled/';
 	static public $views;
 	static public $links;
+	static public $locale_names;
 }
 
 config::$views = array('manual', 'changelog');
@@ -20,4 +20,15 @@ config::$links = array(
 	'enesce' => 'http://enesce.com/',
 	'flieslikeabrick' => 'http://www.u13.net/',
 	'tablatures' => 'http://www.soldat.pl/downloads/tabs.zip'
+);
+
+// this stuff doesn't need translations, it's for the main index where you choose language
+// the languages will appear in the same order as this list
+
+config::$locale_names = array(
+	'en_US' => 'English',
+	'pl_PL' => 'Polski',
+	'es_LA' => 'Español',
+	'de_DE' => 'Deutsch',
+	'pt_BR' => 'Portugués (Brasil)'
 );

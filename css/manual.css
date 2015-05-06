@@ -1,8 +1,8 @@
 html {max-width:980px;margin:0 auto;}
-body {margin:0;background-image:url('images/bak.gif');font-family:Courier;font-size:14px;}
+body {margin:0;background-image:url('../images/bak.gif');font-family:Courier;font-size:14px;}
 a {color:#167E1B;text-decoration:none;}
 a:hover {color:#178F2C;text-decoration:underline;}
-hr {background:transparent url('images/line.png') no-repeat;background-size:640px 5px;
+hr {background:transparent url('../images/line.png') no-repeat;background-size:640px 5px;
 	margin:1em 0;border:0;height:5px;box-sizing:content-box;clear:both;}
 h1,h2 {font-size:x-large;margin:1.8em 0;}
 h1 {margin-top:1em;}

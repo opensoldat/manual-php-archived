@@ -194,7 +194,7 @@ function text($id)
 	$result = '';
 
 	if (isset($strings[$id]))
-		$result = str_replace("\n", '<br>', htmlspecialchars($strings[$id]));
+		$result = str_replace(PHP_EOL, '<br>', htmlspecialchars($strings[$id]));
 	else
 		return htmlspecialchars("---MISSING STRING '$id'---");
 

@@ -1,0 +1,9 @@
+html {max-width:980px;margin:0 auto;}
+body {margin:0;background:#26716F;color:#E9EAED;text-align:center;font-family:Arial;}
+body > p:first-child {margin:0 0 4em;}
+h1,h2 {font-size:large;margin:2em 0;}
+h2 {margin-top:4em;}
+a {text-decoration:none;color:#6C2626;}
+a:hover {text-decoration:underline;}
+hr {margin:2em 0;}
+p.intro {font-weight:bold;}

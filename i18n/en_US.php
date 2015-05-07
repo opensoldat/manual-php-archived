@@ -37,7 +37,8 @@ $strings['req_min_6'] = 'Sound card';
 $strings['req_min_7'] = 'Network card or modem';
 $strings['req_min_8'] = 'Microsoft Windows 98/Me/2000/XP/Vista/7/8';
 $strings['req_min_9'] = 'Microsoft DirectX 8.1';
-$strings['story_body'] = "It's Quake style:\nA couple of guys decided to kill each other and you can be one of them.";
+$strings['story_body'] = 'It\'s Quake style:
+A couple of guys decided to kill each other and you can be one of them.';
 $strings['start_sp_title'] = 'Singleplayer.';
 $strings['start_sp_body_0'] = 'The easiest way to start a game:';
 $strings['start_sp_body_1'] = 'Select a map from the {MAPS} listbox on the right';
@@ -91,7 +92,8 @@ $strings['modes_pm_desc'] = 'The same as {Deathmatch} but here you fight for poi
 $strings['modes_rm_desc'] = 'Rambo - First Blood style. On the map there\'s John Rambo\'s Bow. The one who takes it gains super powers and can regenerate health. The rest of the players hunt him for the bow because only Rambo gets points for kill.';
 $strings['modes_tm_desc'] = 'There can be 4 teams on the map (Alpha Team, Bravo Team, Charlie Team, Delta Team) that fight against each other. The team that gets the highest score (sum of all kills) wins.';
 $strings['modes_ctf_desc'] = 'A competition for two teams (Alpha Team & Bravo Team). To score you have to steal the opponents team flag and bring to your base with your flag.';
-$strings['modes_inf_desc'] = "There are two teams (Alpha Team and Beta Team). The blue team has a base with a black flag, that they must defend. The goal of the red team is to steal the black flag and bring it to the white flag (usually near the reds spawn place).\nRecommended Realistic Mode.";
+$strings['modes_inf_desc'] = 'There are two teams (Alpha Team and Beta Team). The blue team has a base with a black flag, that they must defend. The goal of the red team is to steal the black flag and bring it to the white flag (usually near the reds spawn place).
+Recommended Realistic Mode.';
 $strings['modes_htf_desc'] = 'Two teams (Alpha Team and Beta Team) fight over the yellow flag. The team that holds the flag gets points every couple of seconds.';
 $strings['modes_respawn'] = 'Recommended {1:Respawn Time}: {2} seconds.';
 $strings['modes_respawn_dm'] = '3-6';
@@ -424,7 +426,9 @@ $strings['commands_cli_dedicatedstart'] = 'Soldat.exe {-dedicated -start}';
 $strings['commands_cli_dedicatedstart_desc'] = 'Runs the dedicated server automatically.';
 $strings['commands_cli_join'] = 'Soldat.exe {-join IPnumber (port password)}';
 $strings['commands_cli_join_desc'] = 'Runs the game and connects to {IPnumber}, {port} and {password} are optional.';
-$strings['commands_cli_join_example'] = "Example:\nSoldat.exe -join 62.93.201.70\nSoldat.exe -join 127.0.0.1 23073 tikikaka";
+$strings['commands_cli_join_example'] = 'Example:
+Soldat.exe -join 62.93.201.70
+Soldat.exe -join 127.0.0.1 23073 tikikaka';
 $strings['commands_cli_demo'] = 'Soldat.exe {-demo name (freecam speed notexts extract)}';
 $strings['commands_cli_demo_desc'] = 'Runs the game and plays the demo specified by {name}. Optional paramaters are:';
 $strings['commands_cli_demo_freecam'] = 'freecam (0/1) - the user can freely change the camera (default 1)';
@@ -432,7 +436,9 @@ $strings['commands_cli_demo_speed'] = 'speed (0-...%)- how quick the playback wi
 $strings['commands_cli_demo_notexts'] = 'notexts (0/1) - no texts, menus or cursor will be displayed during playback (default 0)';
 $strings['commands_cli_demo_extract'] = 'extract (0/1) - extracts the demo to BMP files (default 0). Later they can be used to make an AVI file in a program like "Bmp2Avi".';
 $strings['commands_cli_demo_sound'] = 'The sound can be extracted with a program like "Total Recorder". Please note that this can take time and is not recommended on slower systems. For better results specify lower speed (like 50%).';
-$strings['commands_cli_demo_example'] = "Example:\nSoldat.exe -demo demo12\nSoldat.exe -demo demo19 1 200 1 0";
+$strings['commands_cli_demo_example'] = 'Example:
+Soldat.exe -demo demo12
+Soldat.exe -demo demo19 1 200 1 0';
 $strings['commands_cli_mod'] = 'Soldat.exe {-mod xxx}';
 $strings['commands_cli_mod_desc'] = 'Starts the game with a Soldat mod located in Soldat\Mods\xxx';
 $strings['chat_intro'] = 'The default key for Chat function is {T} (for team chat {Y}), to send it press {ENTER}.';
@@ -451,16 +457,58 @@ $strings['server_how_arg_auto_2'] = 'Run Soldat with parameters -dedicated -star
 $strings['server_admin'] = 'Remote administration';
 $strings['server_admin_desc'] = 'Players from outside the server can control it. To give this option to a player add him to the Remote Admins list. The commands for this are described here {COMMANDS}.';
 $strings['server_ports'] = 'Game Ports';
-$strings['server_ports_desc_0'] = "Important! - If you have a firewall you should open the UDP game ports\ndefault: 23073 for the server (can be changed in Soldat Setup) , client uses a default port: 23083 (can't be changed)\nThere is an option to join firewall servers without opening the ports, but only through the lobby server (through the server list - forwarding).";
-$strings['server_ports_desc_1'] = "The Soldat server uses the following ports:\nUDP: game port (default 23073)\nTCP/IP: admin port = game port (default 23073)\nTCP/IP: files port = game port + 10 (default 23083)";
+$strings['server_ports_desc_0'] = 'Important! - If you have a firewall you should open the UDP game ports
+default: 23073 for the server (can be changed in Soldat Setup) , client uses a default port: 23083 (can\'t be changed)
+There is an option to join firewall servers without opening the ports, but only through the lobby server (through the server list - forwarding).';
+$strings['server_ports_desc_1'] = 'The Soldat server uses the following ports:
+UDP: game port (default 23073)
+TCP/IP: admin port = game port (default 23073)
+TCP/IP: files port = game port + 10 (default 23083)';
 $strings['anticheat_intro_0'] = 'The Soldat network Anti-Cheat Protection is based on two modules.';
 $strings['anticheat_intro_1'] = 'Software company\'s developing multiplayer games spend millions of dollars, hundreds of hours, the work of thousands of people are wasted to invent the perfect anti-cheat systems. All those systems are as good as nothing because they forgot about one tiny little thing. The author of Soldat got the idea after 4 seconds of thinking. Now Sierra and other On-Line industry giants can\'t stand it that they didn\'t think of it first. The first Anti-Cheat Protection module in Soldat is simply:';
 $strings['anticheat_part_0'] = 'A request: {"Please don\'t cheat while playing Soldat"}.';
 $strings['anticheat_part_0_note'] = 'If that somehow doesn\'t work then please read this:';
 $strings['anticheat_part_1'] = 'Because of the Anti-Cheat protection system used in Soldat you cannot use any hack tools like: memory finders, trainers, packet editors, hex editors and dissasemblers while Soldat is running. It is STRONGLY RECOMMENDED to CLOSE all programs running in the background while Soldat is on. The use of hack tools will degrade the game to a level it will no longer be playable. Also editing the executable or other related files and cracking the shareware protection will cause system instability and problems with network play. If this happens to you and you are sure you did not do anything illegal please contact the author.';
 $strings['anticheat_note'] = 'Please remember that this is a small shareware game made by one man. If you try to break the game protection you make harm to yourself because I can stop making the game if I\'m without money and with overload of work making new anti-hack and anti-cheat systems all the time. If you want to hack something please concentrate on big company\'s like EA Games. Hacking a big commercial title will prove that you are good, please leave Soldat alone.';
-$strings['license_body'] = "COPYRIGHT INFORMATION\n\nSoldat and all the file formats the program produces are Copyright (C) 2001-11 Michal Marcinkowski. All rights reserved.\n\n=====================================================\n\nLICENSE\n\nSoldat is a Shareware application. It is fully playable. If you like the game please consider registering.\n\n=====================================================\n\nDISTRIBUTION\n\nUNREGISTERED COPY VERSIONS OF SOLDAT.\nProvided that you verify that you are distributing the Shareware Version you are hereby licensed to:\na. make as many copies of the Shareware version of this software and documentation as you wish\nb. give exact copies of the original Shareware version to anyone\nc. distribute the Shareware version of the software and documentation in its unmodified form via electronic means (e-mail, web page, diskette, CD including magazine Cover CDs)\n\nThere is no charge for any of the above.\n\nREGISTERED VERSIONS OF SOLDAT. \nYou may not, for any purpose, distribute copies of registered versions of this software, documentation or related materials to any third-parties.\n\n=====================================================\n\nLEGAL STUFF\n\nNo portion of this software may be disassembled, reverse engineered, decompiled, modified or altered.\n\nAll graphics and sounds may be modified except maps and scenery files. Modified graphics and sounds can be distributed for free as game MODs.\n\nThis Software is supplied \"as is\" and no liability will be accepted by Michal Marcinkowski or any legal vendors of this software for any damage incurred by the use of this software.\n\nNeither directly nor indirectly you cannot rent or sell by any means this software.";
-$strings['contact_body'] = "E-mail: michal.marcinkowski<at>gmail.com\nWWW: {http://www.soldat.pl}\nSoldat Forums: {http://forums.soldat.pl}";
+$strings['license_body'] = 'COPYRIGHT INFORMATION
+
+Soldat and all the file formats the program produces are Copyright (C) 2001-11 Michal Marcinkowski. All rights reserved.
+
+=====================================================
+
+LICENSE
+
+Soldat is a Shareware application. It is fully playable. If you like the game please consider registering.
+
+=====================================================
+
+DISTRIBUTION
+
+UNREGISTERED COPY VERSIONS OF SOLDAT.
+Provided that you verify that you are distributing the Shareware Version you are hereby licensed to:
+a. make as many copies of the Shareware version of this software and documentation as you wish
+b. give exact copies of the original Shareware version to anyone
+c. distribute the Shareware version of the software and documentation in its unmodified form via electronic means (e-mail, web page, diskette, CD including magazine Cover CDs)
+
+There is no charge for any of the above.
+
+REGISTERED VERSIONS OF SOLDAT.
+You may not, for any purpose, distribute copies of registered versions of this software, documentation or related materials to any third-parties.
+
+=====================================================
+
+LEGAL STUFF
+
+No portion of this software may be disassembled, reverse engineered, decompiled, modified or altered.
+
+All graphics and sounds may be modified except maps and scenery files. Modified graphics and sounds can be distributed for free as game MODs.
+
+This Software is supplied "as is" and no liability will be accepted by Michal Marcinkowski or any legal vendors of this software for any damage incurred by the use of this software.
+
+Neither directly nor indirectly you cannot rent or sell by any means this software.';
+$strings['contact_body'] = 'E-mail: michal.marcinkowski<at>gmail.com
+WWW: {http://www.soldat.pl}
+Soldat Forums: {http://forums.soldat.pl}';
 $strings['version_body'] = 'See {changelog}.';
 $strings['version_current'] = 'Current version:';
 $strings['version_previous'] = 'Previous public versions:';
@@ -581,6 +629,18 @@ $strings['credits_thanks_notreminded'] = 'To those who should be here but didn\'
 $strings['index_manual'] = 'Soldat Manual';
 $strings['index_register'] = 'Register Soldat';
 $strings['index_guides'] = 'Soldat Community Guides';
+$strings['reg_intro_0'] = 'To enjoy the registered version of Soldat NOW go to this {section}.';
+$strings['reg_intro_1'] = 'If you are not convinced yet take a look at the benefits of registering below.';
+$strings['reg_benefits'] = 'What do I get from registering Soldat?';
+$strings['reg_benefits_body'] = 'Soldat is free to play but you should consider registering it if you enjoy it.
+Registering is the right thing to do, it makes the game live because the author gets motivated and he has funds to carry on.
+The cost is only US $13.99. So think about it if you like Soldat.
+Except the feeling that you\'re doing good and becoming a registered member of the great Soldat community,
+YOU GET MORE benefits, here they are:';
+$strings['reg_profiles'] = 'CUSTOM PROFILES';
+$strings['reg_profiles_body'] = 'Gives you the ability to save custom settings in as many as you want profiles.
+Different profiles let you instantly access different premade settings such as: game options, setup options, server settings, player names and visuals.
+Makes changing options a whole lot easier. The above sceenshot shows the idea.';
 
 
 $strings['changelog_0_title'] = '0.0.0  Soldat doesn\'t exist';

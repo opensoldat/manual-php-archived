@@ -10,7 +10,7 @@ class config
 	static public $locale_names;
 }
 
-config::$views = array('manual', 'changelog');
+config::$views = array('index', 'manual', 'changelog', 'register', 'guides');
 
 // external links. links that are hard coded in the text string aren't included here
 

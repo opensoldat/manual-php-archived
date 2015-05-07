@@ -45,8 +45,9 @@ function compile()
 	mkdir($outdir);
 	mkdir($outdir . 'images/');
 	mkdir($outdir . 'css/');
+	mkdir($outdir . 'guides/');
 
-	$copy_src = array_merge(glob('images/*.*'), glob('css/*.*'));
+	$copy_src = array_merge(glob('images/*.*'), glob('css/*.*'), glob('guides/*.*'));
 	$copy_dst = array_map(function($name) use($outdir) { return $outdir . $name; }, $copy_src);
 
 	array_map("copy", $copy_src, $copy_dst);
@@ -59,6 +60,8 @@ function compile()
 		'links' => config::$links,
 		'locale_list' => $locale_list
 	);
+
+	file_put_contents($outdir . 'index.html', render('language', $context));
 
 	foreach ($locale_list as $locale)
 	{
@@ -81,8 +84,6 @@ function compile()
 
 			array_map("copy", $images, $dst);
 		}
-
-		file_put_contents($outdir . 'index.html', render('language', $context));
 
 		foreach (config::$views as $view)
 			file_put_contents($outdir . $locale . '/' . $view . '.html', render($view, $context));
@@ -120,7 +121,8 @@ function get_locale()
 
 function get_locale_name($locale)
 {
-	return isset(config::$locale_names[$locale]) ? config::$locale_names[$locale] : $locale;
+	return isset(config::$locale_names[$locale]) ?
+		htmlspecialchars(config::$locale_names[$locale]) : $locale;
 }
 
 // used for internal links. makes it work as php site or static compiled site
@@ -133,6 +135,18 @@ function get_link($view, $locale = null, $from_root = false)
 		return ($from_root ? $locale . '/' : '') . $view . '.html';
 	else
 		return '?view=' . $view . '&amp;lang=' . $locale;
+}
+
+// returns array like array('filename.pdf' => 'guides/filename.pdf', ...)
+function get_guides()
+{
+	$guides = glob('guides/*.*');
+	$names = array_map(function($path) { return htmlspecialchars(basename($path)); }, $guides);
+
+	if (config::$compiling)
+		$guides = array_map(function($path) { return '../' . htmlspecialchars($path); }, $guides);
+
+	return array_combine($names, $guides);
 }
 
 function load_strings($locale)
@@ -184,6 +198,17 @@ function text($id)
 	else
 		return htmlspecialchars("---MISSING STRING '$id'---");
 
+	/**
+	 * The next part handles placeholders, which can be in any of the following forms:
+	 *
+	 * 'Hello, {1}.'                                      -> text(str_id, 'John')
+	 * 'Hello, {1}. You have {2} unread mails.'           -> text(str_id, 'John', '5')
+	 * 'This string has a {1:link.com} and {2:bold text}' -> text(str_id, '<a href="%">%</a>', '<b>%</b>')
+	 * 'If no {number} is given it will be treated as 1'  -> text(str_id, '%')
+	 * 'Multiple {placeholders} {with} {same} {number}'   -> text(str_id, '<i>%</i>')
+	 *
+	 * The number gives the argument order: text(id, replacement_1, replacement_2, ...)
+	 */
 	if ($n = preg_match_all('/{.+?}/', $result, $matches, PREG_OFFSET_CAPTURE))
 	{
 		$args = array_slice(func_get_args(), 1);
@@ -283,6 +308,21 @@ function del($name)
 	return rmdir($name);
 }
 
+/**
+ * Returns an array of changelogs pulled from $strings, starting with the most recent one.
+ *
+ * Result example: [
+ *   {
+ *     "title": "1.6.8",
+ *     "content": [
+ *       "fixed xxx",
+ *       "fixed yyy",
+ *       ...
+ *     ]
+ *   },
+ *   ...
+ * ]
+ */
 function get_changelogs()
 {
 	global $strings;

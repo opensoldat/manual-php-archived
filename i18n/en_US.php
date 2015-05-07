@@ -578,6 +578,9 @@ $strings['credits_thanks_trssam'] = 'TRSSam for providing the first lobby server
 $strings['credits_thanks_testedsoldat'] = 'Special, special thanks for all those that tested Soldat and made it a better game (yes it\'s you!).';
 $strings['credits_thanks_misc'] = 'In a short version I thank: the electric company, my computers, my keyboard, start menu, John Pascal (or whatever his name is), John \'god\' Carmack, Bill G., Sylvester S., Arnold S. ...';
 $strings['credits_thanks_notreminded'] = 'To those who should be here but didn\'t remind me that they should be here ;)';
+$strings['index_manual'] = 'Soldat Manual';
+$strings['index_register'] = 'Register Soldat';
+$strings['index_guides'] = 'Soldat Community Guides';
 
 
 $strings['changelog_0_title'] = '0.0.0  Soldat doesn\'t exist';

@@ -641,6 +641,33 @@ $strings['reg_profiles'] = 'CUSTOM PROFILES';
 $strings['reg_profiles_body'] = 'Gives you the ability to save custom settings in as many as you want profiles.
 Different profiles let you instantly access different premade settings such as: game options, setup options, server settings, player names and visuals.
 Makes changing options a whole lot easier. The above sceenshot shows the idea.';
+$strings['reg_interfaces'] = 'CUSTOM INTERFACES';
+$strings['reg_interfaces_body_0'] = 'You can change the look, position and behaviour of the in-game interface.
+If you\'re bored with the standard Soldat interface you can easily change it.';
+$strings['reg_interfaces_body_1'] = 'Currently in Soldat there are available the below interfaces.
+If it\'s not enough you can easily download tons of interfaces made by users or create your own with the Soldat Interface Maker.';
+$strings['reg_weaponstats'] = 'WEAPON STATISTICS';
+$strings['reg_weaponstats_body'] = 'Want to know how much kills you get with your favorite weapon? Press [F2] and display full stats.';
+$strings['reg_nagscreen'] = 'NO NAG SCREEN';
+$strings['reg_nagscreen_body'] = 'After registering you will have a {fully playable} version of Soldat with {no unnecessary} nag screens and texts. No banner splash screen on start.';
+$strings['reg_honored'] = 'BECOME AN HONORED MEMBER OF THE SOLDAT COMMUNITY';
+$strings['reg_honored_body_0'] = 'Imagine showing that you support the game. As soon as you register there will be a {special symbol} (bright yellow star) next to your name on the scoreboard whenever you play Soldat.';
+$strings['reg_honored_body_1'] = 'Thanks to this you will be an honored member of the Soldat community and everyone will know it.';
+$strings['reg_honored_body_2'] = 'Thanks to this star everyone will recognize you. No unregistered noobs using your nickname!';
+$strings['reg_jetflames'] = 'COLORED JET FLAMES';
+$strings['reg_jetflames_body'] = '{Only registered users} have the possibility to have unique jet flames color. If you don\'t want to have the same yellow flame coming out of your boots register now! With this you will be always recognized and nobody will make a mistake that this is you. Only registered players can have this.';
+$strings['reg_modinterface'] = 'MODIFY INTERFACE';
+$strings['reg_modinterface_body'] = 'With the Interface Maker you will have the ability to modify the current interfaces.
+If you don\'t like the positions of the weapon and health stats you can easily move them and {suit your needs}.';
+$strings['reg_createinterface'] = 'CREATE YOUR OWN INTERFACE';
+$strings['reg_createinterface_body'] = 'Draw your own interface! It can\'t be easier with the Interface Maker.
+If you don\'t want to make everything you can change some of the default interfaces.
+Also you can just make custom interfaces that only change your aim cursor!
+You can make or download dozens of unique cursors for you to use.';
+$strings['reg_moneyback'] = '30 DAY MONEY-BACK GUARANTEE';
+$strings['reg_moneyback_body'] = 'Because there are so many happy players that have already registered I have decided to give a 30-day money-back guarantee! It will be enough if you contact me and say that you want a refund and tell me why so I can improve whatever went wrong. So there is no risk in buying the Soldat registration. Join all the other happy players NOW!';
+$strings['reg_think'] = '{1:So think about it.}
+Soldat is {2:free to play} but it needs your support, you can feel good about it, plus you will get a full package of new options to {2:play around} with!';
 
 
 $strings['changelog_0_title'] = '0.0.0  Soldat doesn\'t exist';

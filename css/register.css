@@ -3,7 +3,9 @@ body {margin:0;background:#26716F;color:#E9EAED;text-align:center;font-family:Ar
 body > p:first-child {margin:0 0 4em;}
 h1,h2 {font-size:large;margin:2em 0;}
 h2 {margin-top:4em;}
-a {text-decoration:none;color:#6C2626;}
+a {text-decoration:none;color:#713926;}
 a:hover {text-decoration:underline;}
 hr {margin:2em 0;}
+p span {text-decoration:underline;}
 p.intro {font-weight:bold;}
+.screens img + img {margin-left:20px;}

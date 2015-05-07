@@ -668,6 +668,19 @@ $strings['reg_moneyback'] = '30 DAY MONEY-BACK GUARANTEE';
 $strings['reg_moneyback_body'] = 'Because there are so many happy players that have already registered I have decided to give a 30-day money-back guarantee! It will be enough if you contact me and say that you want a refund and tell me why so I can improve whatever went wrong. So there is no risk in buying the Soldat registration. Join all the other happy players NOW!';
 $strings['reg_think'] = '{1:So think about it.}
 Soldat is {2:free to play} but it needs your support, you can feel good about it, plus you will get a full package of new options to {2:play around} with!';
+$strings['reg_how'] = 'So how do I register Soldat?';
+$strings['reg_how_desc'] = 'Just check these links below and select the one you prefer:';
+$strings['reg_payinfo_0'] = 'Registering costs 13.99$.
+All currencies are accepted (including EU). All payments are secure.
+Refunds available. {30 day money-back guarantee!}';
+$strings['reg_payinfo_1'] = 'Click here to go to the Soldat registration page and
+{get your full version in a few minutes:}';
+$strings['reg_footnotes_0'] = 'Registration is for lifetime (all future versions!)';
+$strings['reg_footnotes_1'] = 'After registering you will receive a code and program that will allow you to {instantly} enjoy the full version of Soldat.';
+$strings['reg_footnotes_2'] = 'You will recieve the registration just in minutes after the payment is processed and you can have fun with the full version of Soldat {right away!}';
+$strings['reg_footnotes_3'] = 'If you have ANY problems or questions e-mail us personally here {support@thd.vg}';
+$strings['reg_footnotes_4'] = 'Thank you and have fun!';
+$strings['reg_signature'] = 'Michal Marcinkowski';
 
 
 $strings['changelog_0_title'] = '0.0.0  Soldat doesn\'t exist';

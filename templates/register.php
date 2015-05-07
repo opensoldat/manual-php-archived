@@ -39,6 +39,12 @@
 	<p><?= img('reg-star.jpg'); ?></p>
 	<h2><?= text('reg_jetflames'); ?></h2>
 	<p><?= text('reg_jetflames_body', '<strong>%</strong>'); ?></p>
+	<br>
+	<p>
+		<?= img('reg-jet1.jpg') . PHP_EOL; ?>
+		<?= img('reg-jet2.jpg') . PHP_EOL; ?>
+		<?= img('reg-jet3.jpg') . PHP_EOL; ?>
+	</p>
 	<h2><?= text('reg_modinterface'); ?></h2>
 	<p><?= text('reg_modinterface_body', '<strong>%</strong>'); ?></p>
 	<h2><?= text('reg_createinterface'); ?></h2>
@@ -46,5 +52,24 @@
 	<h2><?= text('reg_moneyback'); ?></h2>
 	<p><?= text('reg_moneyback_body'); ?></p>
 	<p><?= text('reg_think', '<span>%</span>', '<em>%</em>'); ?></p>
+	<br>
+	<h2 id="register"><?= text('reg_how'); ?></h2>
+	<p><?= text('reg_how_desc'); ?></p>
+	<hr>
+	<p><?= text('reg_payinfo_0', '<strong>%</strong>'); ?></p>
+	<p><?= text('reg_payinfo_1', '<strong>%</strong>'); ?></p>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input name="cmd" type="hidden" value="_s-xclick">
+		<input name="hosted_button_id" type="hidden" value="5ALDFKKP3EUUG">
+		<input alt="PayPal  The safer, easier way to pay online." border="0" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG_global.gif" type="image">
+		<img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+	</form>
+	<hr>
+	<p class="highlight"><?= text('reg_footnotes_0'); ?></p>
+	<p><?= text('reg_footnotes_1', '<strong>%</strong>'); ?></p>
+	<p><?= text('reg_footnotes_2', '<strong>%</strong>'); ?></p>
+	<p><?= text('reg_footnotes_3', '<a href="mailto:%">%</a>'); ?></p>
+	<p><?= text('reg_footnotes_4'); ?></p>
+	<p class="signature"><?= text('reg_signature'); ?></p>
 </body>
 </html>

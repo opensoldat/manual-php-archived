@@ -1,3 +1,23 @@
+1.6.9b1 (04.05.2014)
+- Added allow camera switching in demos while paused #274
+- Option Survival_Clear_Weapons added in GAME section of soldat.ini
+- Added Numpad Taunts #515
+- Modified changed update button to yellow
+- Fixed Spiderman bug
+- Fixed Starting single player game a few times causes hight cpu usage (#160 #323 #333 #520)
+- Fixed Alt and AltGr don't work for assigned keys and supress input like shooting (#309, #530)
+- Fixed Soldat (not responding) when trying to find servers without having internet #463
+- Fixed Star and Flag icon in the scoreboard are scaled down #601
+- Fixed SetWeaponActive bugs weapons of a player on spawn #603
+- Fixed wrong window height on startup
+- Fixed having 24 chars in name results in HWID fail
+- Fixed survival capping when everybody is alive results in a not ending round
+- Fixed survival flag grabbing in multiplayer should not work after round end
+- Fixed invisible shield where a player died
+- Fixed survival mode respawning if out of map after round end results in a never ending round
+- Fixed survival mode dead body outside map respawn bug
+- Fixed survival mode team switch respawn bug
+
 1.6.8 (26.10.2014)
 - Modified command /votemap to show the message "cannot vote" when applicable
 - Modified vote results to happen immediately if the required percentage is achieved

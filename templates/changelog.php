@@ -8,7 +8,7 @@
 </head>
 <body class="changelog">
 	<div class="header">
-		<h1><?= text('header_title'); ?></h1>
+		<h1><?= text('header_title', $version); ?></h1>
 		<?= img('title.gif') . PHP_EOL; ?>
 	</div>
 <?php $changelogs = get_changelogs(); ?>

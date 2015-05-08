@@ -16,6 +16,7 @@ function main($args)
 	load_strings(config::$locale);
 
 	$context = array(
+		'version' => config::$version,
 		'style_prefix' => 'css/',
 		'images_prefix' => 'images/',
 		'links' => config::$links,
@@ -55,6 +56,7 @@ function compile()
 	$locale_list = get_locale_list();
 
 	$context = array(
+		'version' => config::$version,
 		'style_prefix' => '../css/',
 		'images_prefix' => '../images/',
 		'links' => config::$links,

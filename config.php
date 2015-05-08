@@ -2,6 +2,7 @@
 
 class config
 {
+	static public $version = '1.6.9b1';
 	static public $locale = 'en_US';
 	static public $compiling = false;
 	static public $compile_dir = '_compiled/';

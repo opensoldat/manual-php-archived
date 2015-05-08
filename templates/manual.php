@@ -8,9 +8,9 @@
 </head>
 <body>
 	<div class="header">
-		<h1><?= text('header_title'); ?></h1>
+		<h1><?= text('header_title', $version); ?></h1>
 		<?= img('title.gif') . PHP_EOL; ?>
-		<h2><?= text('header_subtitle'); ?></h2>
+		<h2><?= text('header_subtitle', $version); ?></h2>
 		<?= text('index_title') . PHP_EOL; ?>
 		<ul>
 			<li><a href="#intro"><?=     text('intro_title');     ?></a></li>

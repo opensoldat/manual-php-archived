@@ -2,7 +2,7 @@
 
 $strings['main_title'] = 'Soldat - {1}';
 $strings['manual_title'] = 'Manual';
-$strings['header_title'] = 'SOLDAT {1} (c) 2001-2014 Michal Marcinkowski';
+$strings['header_title'] = 'SOLDAT {1} (c) 2001-2015 Michal Marcinkowski';
 $strings['header_subtitle'] = 'SOLDAT MANUAL ({1} English)';
 $strings['index_title'] = 'Index:';
 $strings['index_link'] = '[index]';
@@ -472,7 +472,7 @@ $strings['anticheat_part_1'] = 'Because of the Anti-Cheat protection system used
 $strings['anticheat_note'] = 'Please remember that this is a small shareware game made by one man. If you try to break the game protection you make harm to yourself because I can stop making the game if I\'m without money and with overload of work making new anti-hack and anti-cheat systems all the time. If you want to hack something please concentrate on big company\'s like EA Games. Hacking a big commercial title will prove that you are good, please leave Soldat alone.';
 $strings['license_body'] = 'COPYRIGHT INFORMATION
 
-Soldat and all the file formats the program produces are Copyright (C) 2001-11 Michal Marcinkowski. All rights reserved.
+Soldat and all the file formats the program produces are Copyright (C) 2001-15 Michal Marcinkowski. All rights reserved.
 
 =====================================================
 

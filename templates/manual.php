@@ -167,7 +167,7 @@
 	<hr>
 	<h3 id="options"><?= text('options_title'); ?></h3>
 	<h4><?= text('options_opt', '<em>%</em>'); ?></h4>
-	<p><?= img('options.png') . PHP_EOL; ?></p>
+	<p><?= img('options.png'); ?></p>
 	<ul class="options">
 		<li>
 			<strong><?= text('options_opt_game'); ?></strong>
@@ -523,43 +523,43 @@
 	<ol class="weapons">
 		<li>
 			<?= text('weapons_eagles') . PHP_EOL; ?>
-			<p><?= text('weapons_eagles_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_eagles_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_mp5') . PHP_EOL; ?>
-			<p><?= text('weapons_mp5_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_mp5_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_ak74') . PHP_EOL; ?>
-			<p><?= text('weapons_ak74_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_ak74_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_steyr') . PHP_EOL; ?>
-			<p><?= text('weapons_steyr_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_steyr_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_spas') . PHP_EOL; ?>
-			<p><?= text('weapons_spas_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_spas_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_ruger') . PHP_EOL; ?>
-			<p><?= text('weapons_ruger_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_ruger_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_m79') . PHP_EOL; ?>
-			<p><?= text('weapons_m79_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_m79_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_barret') . PHP_EOL; ?>
-			<p><?= text('weapons_barret_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_barret_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_minimi') . PHP_EOL; ?>
-			<p><?= text('weapons_minimi_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_minimi_desc'); ?></p>
 		</li>
 		<li>
 			<?= text('weapons_minigun') . PHP_EOL; ?>
-			<p><?= text('weapons_minigun_desc') . PHP_EOL; ?></p>
+			<p><?= text('weapons_minigun_desc'); ?></p>
 		</li>
 	</ol>
 	<br>

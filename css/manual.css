@@ -15,7 +15,7 @@ ul > li:before {content:'-';position:absolute;left:-1.2em;}
 ol {counter-reset:counter;}
 ol > li {position:relative;margin-left:1.5em;counter-increment:counter;}
 ol > li:before {content:counter(counter, lower-alpha) ')';position:absolute;left:-1.5em;}
-table {border-collapse:collapse;}
+table {border-collapse:collapse;background:rgba(255,255,255,0.3);}
 table td {border:1px solid #666;padding:0.5em;}
 table td:first-child {font-weight:bold;}
 

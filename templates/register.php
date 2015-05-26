@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="<?= $style_prefix; ?>register.css">
 </head>
 <body>
-	<p><?= img('registertitle.gif'); ?></p>
+	<p class="header"><?= img('registertitle.gif'); ?></p>
 	<p class="intro"><?= text('reg_intro_0', '<a href="#register">%</a>'); ?></p>
 	<p class="intro"><?= text('reg_intro_1'); ?></p>
 	<hr>

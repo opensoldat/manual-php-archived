@@ -29,8 +29,12 @@
 	</div>
 	<h2><?= text('reg_weaponstats'); ?></h2>
 	<p><?= text('reg_weaponstats_body'); ?></p>
+	<br>
+	<p><?= img('weapon-stats.png'); ?></p>
 	<h2><?= text('reg_nagscreen'); ?></h2>
 	<p><?= text('reg_nagscreen_body', '<strong>%</strong>'); ?></p>
+	<br>
+	<p><?= img('nag-screen.png'); ?></p>
 	<h2><?= text('reg_honored'); ?></h2>
 	<p><?= text('reg_honored_body_0', '<em>%</em>'); ?></p>
 	<p><?= text('reg_honored_body_1'); ?></p>

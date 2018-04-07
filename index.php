@@ -33,7 +33,7 @@ function main($args)
 
 function compile()
 {
-    error_reporting(E_ALL ^ E_WARNING);
+	error_reporting(E_ALL ^ E_WARNING);
 
 	config::$compiling = true;
 	$outdir = config::$compile_dir;
@@ -95,7 +95,7 @@ function compile()
 
 	print('Done!' . PHP_EOL);
 
-    error_reporting(E_ALL);
+	error_reporting(E_ALL);
 }
 
 function get_locale_list()

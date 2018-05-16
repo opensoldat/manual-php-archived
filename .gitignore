@@ -1,1 +1,4 @@
 _compiled
+
+# IDE files
+.idea/

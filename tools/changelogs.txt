@@ -1,22 +1,136 @@
-1.6.9b1 (04.05.2014)
+1.7.1 (01.07.2016)
+- Modified optimized bullet collisions
+- Modified optimized object collisions
+- Modified removed infinite saw ammo
+- Modified disabled client-side taunt anti-flood protection if taunt is a command
+- Modified damage calculations to use hitbox modifiers now provided by WM  file (previously it was dividing some values to give more precision in a quirky and artificial way)
+- Modified WM file values are now not altered by soldat in any way
+- Modified WM file now supports decimal values
+- Modified stop rendering when soldat window isn't active
+- Modified Health and Vest are now stored as decimal values
+- Modified Bullet time is now disabled by default
+- Fixed bots using kill taunt on selfkill
+- Fixed console showing less lines than actually fit on screen while open
+- Fixed off by one bug in radio menu
+- Fixed client WM checksum checks
+- Removed splashscreen
+
+1.7.0 (01.02.2016)
+- Added new OpenGL renderer that replaces old D3D8 one
+- Added error message for opengl initialization failure
+- Added interpolation between frames for smooth rendering
+- Added high resolution text rendering support
+- Added support for higher definition images
+- Added support for windowed fullscreen (Fullscreen=2)
+- Added Render_Width and Render_Height options to set internal render resolution
+- Added Optimize_Textures config which will resize textures depending resolution for lower GPU memory usage
+- Added Mipmap_Bias and GL_Finish experimental configs
+- Added Low_Power and Sleep configs to have better control over CPU usage vs timing precision
+- Added file logging for graphics related stuff
+- Added high resolution map textures
+- Added 4K UHD objects-gfx
+- Added 4K UHD default interface
+- Added 4K UHD sceneries
+- Added 4K UHD soldier graphics
+- Added 4K UHD weapon graphics
+- Added 4K UHD medkit, vest kit and grenade kits
+- Added overlay.png to interface-gfx which is now used for bonus kit screen effect
+- Added setup.sif is missing error message #614
+- Added link to credits for inactive developers
+- Added patch warn if trying to install over non compatible soldat version
+- Added /reloadgraphics command
+- Added desktop resolution config setting
+- Added windowed fullscreen config option via combobox
+- Modified rotated grenade kits 90* clockwise as a temporary fix for incorrect spawning angle
+- Modified weapon menu icons based off weapons-gfx until proper HD icons are made
+- Modified screenshots to be saved as png instead of bmp
+- Modified scale down sprites that exceed size constraints instead of stopping game with an error
+- Modified alignment for new default interface elements
+- Modified converted images to png
+- Modified bonus overlay to use a separate overlay.png image
+- Modified default explosions, fire and smoke: slightly better quality + transparency
+- Modified weapon icons, weapons-gfx and sparks-gfx: removed green screen, upscaled by 4.5x
+- Modified custom interface loading to fallback to default images when they are missing
+- Modified resolution setting to use desktop resolution when it's set to 0x0
+- Modified map textures and edges to be loaded from png file if available
+- Modified screenshots to be taken with internal render resolution instead of final resized one
+- Modified soldier head, hands and Mr.T hairstyle graphics are now grayscale for better customization
+- Modified skin colors to match new soldier graphics
+- Modified removed unused graphics from interface-gfx, objects-gfx, gostek-gfx and weapons-gfx
+- Modified map isn't reloaded when restarting same map
+- Modified spin direction of knife and cluster grenade when facing left
+- Modified gostek rendering code adding tweakable sprite alignment through mod.ini
+- Modified reverted to 1.6.8 netcode for client
+- Modified updated micro1 interface
+- Modified do not show installer welcome page
+- Modified patch do not show icon and group icon install option
+- Modified switched to Play font
+- Modified replaced FontHeightScale config with Font1ScaleX and Font2ScaleX with 125 as default
+- Modified removed DirectX checks
+- Modified removed AntiCheat API
+- Modified removed Force Software option
+- Modified removed none and anisortropic res filters
+- Modified removed none and anisortropic texture filter options
+- Modified removed backbuffer setting
+- Modified disabled bitrate option
+- Modified disabled refresh rate option
+- Modified disabled antialiasing option
+- Modified removed window resize setting
+- Modified removed unused adapter config setting
+- Modified disabled gamma setting from options
+- Fixed frame timing code
+- Fixed texture loading error on -dedicated mode
+- Fixed incorrect health bar position when it's "vertical"
+- Fixed position of vote menu when "scale interface" is disabled
+- Fixed alignment of kill console text
+- Fixed alignment of version text inside esc ingame menu
+- Fixed big texts on bottom covered by bullet time wide screen cut
+- Fixed bad flag initialization code
+- Fixed invalid array index access
+- Fixed animations initialized to wrong index
+- Fixed alpha value outsite allowed value for sparks
+- Fixed zero index access for bot AI
+- Fixed error message when choosing an uninitialized custom color from color dialog
+- Fixed ping dot ignoring its coordinates
+- Fixed parachute so it doesn't break in half after being dropped
+- Fixed missing Adapter setting in soldat.ini breaks config
+- Fixed patch installer cannot be applied manually
+- Fixed spawn "teleport" when map takes too long to load
+- Fixed DrawText scaling issues
+- Fixed parachute rope alignment
+- Fixed weapon aim jerkiness
+- Fixed soldat blocks installation directory #641
+- Fixed free fonts after closing soldat normally
+
+1.6.9 (31.10.2015)
 - Added allow camera switching in demos while paused #274
-- Option Survival_Clear_Weapons added in GAME section of soldat.ini
-- Added Numpad Taunts #515
+- Added Survival_Clear_Weapons option in GAME section of soldat.ini
+- Added NumPad taunts #515
+- Added new GUI theme
+- Added new ping time images in serverlist
+- Added new default mod
 - Modified changed update button to yellow
-- Fixed Spiderman bug
-- Fixed Starting single player game a few times causes hight cpu usage (#160 #323 #333 #520)
-- Fixed Alt and AltGr don't work for assigned keys and supress input like shooting (#309, #530)
+- Fixed spiderman bug
+- Fixed starting single player game a few times causes high CPU usage (#160 #323 #333 #520)
+- Fixed Alt and AltGr don't work for assigned keys and suppress input like shooting (#309, #530)
 - Fixed Soldat (not responding) when trying to find servers without having internet #463
-- Fixed Star and Flag icon in the scoreboard are scaled down #601
+- Fixed star and flag icon in the scoreboard are scaled down #601
 - Fixed SetWeaponActive bugs weapons of a player on spawn #603
 - Fixed wrong window height on startup
-- Fixed having 24 chars in name results in HWID fail
+- Fixed player names with 24 chars result in HWID fail
 - Fixed survival capping when everybody is alive results in a not ending round
 - Fixed survival flag grabbing in multiplayer should not work after round end
 - Fixed invisible shield where a player died
 - Fixed survival mode respawning if out of map after round end results in a never ending round
 - Fixed survival mode dead body outside map respawn bug
 - Fixed survival mode team switch respawn bug
+- Fixed broken nagscreen banner system
+- Fixed freeze on wrong map #608
+- Fixed knives should pass through dead bodies in non realistic #542
+- Fixed nick completion shouldn't trigger without writing any letter
+- Fixed respawn issues in survival when player falls outside of the map #286
+- Fixed taunts triggering some actions undesirebly #215
+- Fixed bot created by SC3 has no bot icon but ping 0
 
 1.6.8 (26.10.2014)
 - Modified command /votemap to show the message "cannot vote" when applicable
@@ -48,7 +162,7 @@
 - Fixed kicking player when vote percentage is above 100% #522
 - Fixed vote exploitable by leaving the game #204
 
-1.6.7 (2.5.2014)
+1.6.7 (02.05.2014)
 - Added new background polygon types: "Background" and "Background Transition"
 - Added visualization of the player's MovementAcc by scaling the cursor
 - Modified the lobby's player count column to not include bots
@@ -143,7 +257,7 @@
 - Fixed momentum being lost or not being able to immediately sidejump as an unprone animation ends
 - Fixed not being able to immediately sidejump out of crouch
 
-1.6.5 (4.8.2013)
+1.6.5 (04.08.2013)
 - Added workaround for black window in fullscreen mode on Windows 8 and later
 - Modified Scale_Interface=0 in soldat.ini can now also be used by unregistered players #338
 - Modified Scale_Interface to be enabled by default
@@ -165,7 +279,7 @@
 - Fixed the escape menu's team selection hotkey not working in non-team based modes #366
 - Fixed the escape menu's team selection hotkey instantly assigning you to Delta Team in TDM
 
-1.6.4 (23.7.2013)
+1.6.4 (23.07.2013)
 - Added BulletSpread WM attribute which controls bullet/pellet spread on Deagles and Spas, and base inaccuracy on other weapons
 - Added Checks for Movement packets being out of order to smooth out movement of players
 - Added FiltersBox position changes depending on the window size
@@ -302,7 +416,7 @@
 - Fixed bullets fired immediately after grenade boosting not registering
 - Fixed untranslated bonus-name strings next to bonus timer #321
 
-1.6.3 (9.5.2012)
+1.6.3 (09.05.2012)
 - Added missing translations in Soldat.exe
 - Added missing translations in soldat config #105, #173
 - Added clicking "default: 23073" changes the port field to 23073
@@ -523,7 +637,7 @@
 - Fixed attempting to download files from server even if they don't exist
 - Fixed intended warp bug caused by holding F4 key
 - Fixed very slow window restoring (disabled semi helpful cheat detection)
-- Fixed access violation on game termination after directx initialization fails
+- Fixed access violation on game termination after DirectX initialization fails
 - Fixed tab order in all tabs
 - Fixed Soldat not being centered in active desktop
 - Fixed missing collision poly on Airpirates
@@ -835,7 +949,7 @@
 - Fixed two grenades being thrown on server when player had a chainsaw
 - Fixed autorecording start on map change
 
-1.3 (05.08.2005)
+1.3.0 (05.08.2005)
 - Added new gamemode: Hold the Flag
 - Added new maps: htf_Mare (by Demonic/Legend), Daybreak, inf_Moonshine (by chakapoko maker), htf_Void (by MM), ctf_Nuubia (by Troskal) htf_Boxed, htf_Futura, htf_Nuclear (by grand_diablo), htf_Arch (by Sticky), htf_Desert (by DeMonIc), Airpirates (by Ville)
 - Added possibility to throw away flag (press jump + crouch buttons at once, default W + S)

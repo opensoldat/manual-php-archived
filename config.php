@@ -2,7 +2,7 @@
 
 class config
 {
-	static public $version = '1.6.9b1';
+	static public $version = '1.7.1';
 	static public $locale = 'en_US';
 	static public $compiling = false;
 	static public $compile_dir = '_compiled/';
@@ -20,7 +20,7 @@ config::$links = array(
 	'shoozza' => 'http://shoozza.de/',
 	'enesce' => 'http://enesce.com/',
 	'flieslikeabrick' => 'http://www.u13.net/',
-	'tablatures' => 'http://www.soldat.pl/downloads/tabs.zip'
+	'tablatures' => 'https://soldat.pl/downloads/tabs.zip'
 );
 
 // this stuff doesn't need translations, it's for the main index where you choose language
@@ -31,5 +31,7 @@ config::$locale_names = array(
 	'pl_PL' => 'Polski',
 	'es_LA' => 'Español',
 	'de_DE' => 'Deutsch',
-	'pt_BR' => 'Portugués (Brasil)'
+	'pt_BR' => 'Portugués (Brasil)',
+	'ru_RU' => 'Русский',
+	'uk_UA' => 'Українська',
 );
